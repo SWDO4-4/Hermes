@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.hermes.dao.BoardMapper">
+
+	<select id="boardList" resultType="board">
+		select 
+			*
+		from
+			hermes_board
+		order by
+			board_num desc
+	</select>
+	
+	<insert id="write" parameterType="board">
+	insert into
+		hermes_board
+	values (
+		hermes_board_seq.nextval,
+		#{user_id},
+		#{board_title},
+		#{board_content},
+		<choose>
+			<when test="board_orifile == null and board_savedfile == null">
+			null,
+			null,
+			</when>
+			<otherwise>
+			#{board_orifile},
+			#{board_savedfile},
+			</otherwise>
+		</choose>
+		sysdate
+	)
+	</insert>
+	
+	<select id="read" parameterType="int" resultType="board">
+	select
+		*
+	from
+		hermes_board
+	where
+		board_num = #{board_num}
+	</select>
+	
+
+	
+</mapper>

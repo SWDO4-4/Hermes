@@ -1,0 +1,42 @@
+CREATE TABLE hermes_user (
+    user_id     varchar2(20) primary key,
+    user_pwd    varchar2(20) not null,
+    user_email  varchar2(50) not null unique
+);
+
+create table hermes_board (
+    board_num       number(20)      primary key,
+    user_id         varchar2(20)    not null CONSTRAINT board_userid_fk references hermes_user(user_id) on delete cascade,
+    board_title     varchar2(50)    not null,
+    board_content   varchar2(2000)  not null,
+    board_orifile   varchar2(50),
+    board_savedfile varchar2(50)    unique,
+    board_inputdate date            DEFAULT sysdate
+);
+
+create sequence hermes_board_seq;
+
+
+create table hermes_reply (
+    board_num       number(20)      not null unique CONSTRAINT reply_boardnum_fk2 references hermes_board(board_num) on delete cascade,
+    reply_num       number(20)      primary key,
+    user_id         varchar2(20)    not null unique CONSTRAINT reply_userid_fk2 references hermes_user(user_id) on delete cascade,
+    reply_content   varchar2(1000)  not null,
+    reply_inputdate date            DEFAULT sysdate
+);
+
+create table hermes_map (
+    map_num         number(20)      primary key,
+    user_id         varchar2(20)    not null unique CONSTRAINT map_userid_fk3 references hermes_user(user_id) on delete cascade,
+    map_origin      varchar2(100)   not null,
+    map_destination varchar2(100)   not null,
+    map_waypoint1   varchar2(100),
+    map_waypoint2   varchar2(100),
+    map_waypoint3   varchar2(100),
+    map_waypoint4   varchar2(100),
+    map_waypoint5   varchar2(100)
+);
+
+
+commit;
+
