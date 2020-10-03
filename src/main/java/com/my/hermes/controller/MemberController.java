@@ -101,6 +101,28 @@ public class MemberController {
 		return "redirect:/";
 	}
 	
+	// 네이버로그인 기능
+	@RequestMapping(value = "/naver/callback", method = RequestMethod.GET)
+	public String callback() {
+		return "/naver/callback";
+	}
+	
+	// 네이버로그인 기능
+	@RequestMapping(value = "/naver/login", method = RequestMethod.GET)
+	public String naverLogin(String email,MemberVO vo,Model model,HttpSession session) {
+		vo.setUser_email(email);
+		ArrayList<MemberVO> result = dao.kakaologin(vo);
+		if (result == null) {
+			model.addAttribute("email", email);
+			return "/member/signup";			
+		}
+		else {
+			session.setAttribute("userid", result.get(0).getUser_id());
+			session.setAttribute("useremail", result.get(0).getUser_email());
+		}
+		return "redirect:/";
+	}
+	
 	// 회원 탈퇴
 	@RequestMapping(value = "/member/signout", method = RequestMethod.GET)
 	public String signout() {

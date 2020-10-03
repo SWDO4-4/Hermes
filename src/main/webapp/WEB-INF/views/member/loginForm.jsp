@@ -6,6 +6,7 @@
 <head>
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js"></script>
 <script>
 	Kakao.init('916a8af2aa8acbaa2a9c7e0470399e06');
 	Kakao.isInitialized();
@@ -17,9 +18,7 @@
 			})
 		});
 	});
-
-	
-</script>
+</script>	
 <script>
 	function formCheck() {
 		var useridDoc = document.getElementById("userid");
@@ -169,7 +168,26 @@
 												src="<c:url value='/resources/images/kakao_login.png' />"
 												id="login-button">
 										</div>
-
+										<!-- 네이버아이디로로그인 버튼 노출 영역 -->
+										<div id="naverIdLogin"></div>
+										<!-- //네이버아이디로로그인 버튼 노출 영역 -->
+										
+										<!-- 네이버아디디로로그인 초기화 Script -->
+										<script type="text/javascript">
+											var naverLogin = new naver.LoginWithNaverId(
+												{
+													clientId: "EECf6QJWmOQrk9f59xwB",
+													callbackUrl: "http://localhost:8888/hermes/naver/callback",
+													isPopup: false, /* 팝업을 통한 연동처리 여부 */
+													loginButton: {color: "green", type: 3, height: 40} /* 로그인 버튼의 타입을 지정 */
+												}
+											);
+											
+											/* 설정정보를 초기화하고 연동을 준비 */
+											naverLogin.init();
+											
+										</script>
+										<!-- // 네이버아이디로로그인 초기화 Script -->
 									</form>
 								</div>
 								<div class="signup-image">
