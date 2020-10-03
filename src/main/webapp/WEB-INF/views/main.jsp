@@ -43,6 +43,7 @@
           <li class="nav-item active">	<a href="<c:url value='/'/>" 				 class="nav-link">메인 화면</a></li>
           <li class="nav-item">			<a href="<c:url value='/about'/>"			 class="nav-link">이용 방법</a></li>
           <li class="nav-item">			<a href="<c:url value='/tour'/>"			 class="nav-link">여행 정보</a></li>
+          <h1><a href="<c:url value='/eventSearch' /> ">이벤트</a></h1>
           <li class="nav-item">			<a href="<c:url value='/map/mapmain'/>"		 class="nav-link">지도 정보</a></li>
           <li class="nav-item">			<a href="<c:url value='/board/boardmain'/>"  class="nav-link">게시판</a></li>
           <c:choose>
