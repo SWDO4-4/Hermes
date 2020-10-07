@@ -11,21 +11,36 @@
 	
 
 	$(function() {
-		$("#fly_button").click(function() {
-			 	var url = "${requestScope.fly.url}";
-	            var name = "비행기";
-	            var option = "width = 1200, height = 500, top = 100, left = 200, location = no"
-	            window.open(url, name, option);
+
+		$("#inputDate").click(function(){
 			
-			})
+			$.ajax({ 
+				url:"flySearch"
+				,type: "get"
+				,data: $("#fly_Information").serialize()
+				,async : "false"
+				,success: function(result){
+					
+					var url = result.url;
+		            var name = "비행기";
+		            var option = "width = 1200, height = 500, top = 100, left = 200, location = no"
+		            window.open(url, name, option);
+					}
+				,error: function(){alert("에러발생");}
+
+				
+			});
+			
 		});
+
+	});
 	
 </script>
 </head>
 <body>
 
 	
-	<form action="<c:url value='/flySearch'/>" method="get">
+	<form  id="fly_Information" method="get">
 		<table>
 		<tr>
 			<td>
@@ -61,13 +76,13 @@
 		</tr>
 		<tr>
 			<td>
-			<input type="submit" value="정보입력">
+			 	<input type="button" id="inputDate" value="비행기 정보 확인">
 			</td>
 		</tr>
 		</table>
 	</form>
-	<h1 id="fly_button">비행기예약</h1>
-	${requestScope.fly.go}
+	
+	
 
 </body>
 </html>

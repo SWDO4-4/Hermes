@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.my.hermes.dao.EventDAO;
 import com.my.hermes.dao.KakaoDAO;
@@ -32,7 +33,8 @@ public class FlyController {
 	}
 	
 	@RequestMapping(value = "/flySearch", method = RequestMethod.GET)
-	public String flyDate(FlyVO vo,Model model) {
+	@ResponseBody
+	public FlyVO flyDate(FlyVO vo,Model model) {
 		SimpleDateFormat format1 = new SimpleDateFormat("yyyy.MM.dd");
 		String sDate = format1.format(vo.getStartDate()).trim();
 		String eDate = format1.format(vo.getEndDate()).trim();
@@ -41,8 +43,8 @@ public class FlyController {
 		String url = 
 	    "https://flight.naver.com/flights/v2/results?trip=RT&scity1="+vo.getGo()+"&scity2="+vo.getArrive()+"&ecity1="+vo.getArrive()+"&ecity2="+vo.getGo()+"&sdate1="+vo.getSDate()+".&sdate2="+vo.getEDate()+".&adult=1&child=0&infant=0&fareType=Y";
 		vo.setUrl(url);
-		model.addAttribute("fly", vo);
-		return "/fly";
+		return vo;
+		
 	}
 
 	
