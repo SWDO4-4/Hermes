@@ -4,6 +4,7 @@
 <html lang="ko">
   <head>
     <title>헤르메스 - 일본 여행의 길잡이</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -30,6 +31,92 @@
     <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">
     
     <link rel="stylesheet" href="<c:url value='/resources/fonts/material-icon/css/material-design-iconic-font.min.css'/>">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+	
+
+	$(function() {
+
+		$("#inputDate").click(function(){
+			
+			$.ajax({ 
+				url:"flySearch"
+				,type: "get"
+				,data: $("#fly_Information").serialize()
+				,async : "false"
+				,success: function(result){
+					
+					var url = result.url;
+		            var name = "비행기";
+		            var option = "width = 1200, height = 500, top = 100, left = 200, location = no"
+		            window.open(url, name, option);
+					}
+				,error: function(){alert("에러발생");}
+
+				
+			});
+			
+		});
+
+	});
+	
+</script>
+<script>
+$(function(){
+	$("#exchange").click(function(){
+		var apiURI = "https://prime.exchangerate-api.com/v5/dc885096318ca710a4e18493/latest/KRW";
+		var moneyDoc = document.getElementById("money");
+		moneyDoc = Number(moneyDoc.value);
+		if(isNaN(moneyDoc)){
+				alert("숫자를 입력해주세요");
+			}
+		
+		
+		
+		$.ajax({
+			url : apiURI,
+			dataType : "json",
+			type : "GET",
+			async : "false",
+			success : function(resp) {
+				$("#here").html("");
+				var tag = "<tr>";
+				tag +="<td>";
+				tag +="한국 : " + (moneyDoc+"₩");
+				tag +="</td>";
+				tag +="</tr>";
+				
+				tag += "<tr>";
+				tag +="<td>";
+				tag +="일본 : " + (Math.round(resp.conversion_rates.JPY*moneyDoc)+"¥");
+				tag +="</td>";
+				tag +="</tr>";
+				
+				tag += "<tr>";
+				tag +="<td>";
+				tag +="미국 : " + (Math.round(resp.conversion_rates.USD*moneyDoc)+"$");
+				tag +="</td>";
+				tag +="</tr>";
+				
+				tag += "<tr>";
+				tag +="<td>";
+				tag +="중국 : " + (Math.round(resp.conversion_rates.CNY*moneyDoc)+"元");
+				tag +="</td>";
+				tag +="</tr>";
+				
+				
+				$("#here").append(tag);
+			}
+		});	
+		
+	});
+});
+
+
+	
+
+</script>
   </head>
   <body>
     
@@ -95,8 +182,67 @@
 		              </div>
 		            </div>
 	            </form>
-        		</div>
-          </div>
+	            
+	            <br><hr><br>
+	            <h5>비행기 예약 정보</h5><br>
+	    
+	    <form id="fly_Information" method="get">
+		<table>
+			<tr>
+				<div class="form-group">
+					<input type="date" name="startDate" class="form-control"> 
+				</div>
+					<select name="go" class="form-control">
+			
+					<option value="">선택해주세요</option>
+					<option value="ICN">인천</option>
+					<option value="PUS">부산</option>
+					<option value="TAE">대구</option>
+					<option value="CJJ">청주</option>
+					<option value="CJU">제주</option>
+					<option value="USN">울산</option>
+					<option value="RSU">여수</option>
+				</select>
+			</tr>
+			
+			<br><br>
+			<tr>
+			<div class="form-group">
+				<input type="date" name="endDate" class="form-control">
+			</div>
+				<select name="arrive" class="form-control">
+					<option value="">선택해주세요</option>
+					<option value="NRT">도쿄(나리타)</option>
+					<option value="HND">도쿄(하네다)</option>
+					<option value="KIX">오사카</option>
+					<option value="FUK">후쿠오카</option>
+					<option value="OKA">오키나와</option>
+					<option value="CTS">삿포로</option>
+				</select>
+			</tr>
+			<br><br>
+		<tr>
+			<td>
+			 	<input type="button" id="inputDate" value="비행기 정보 확인" class="btn btn-primary py-3 px-5">
+			</td>
+		</tr>
+		</table>
+	</form>
+	<br><hr><br>
+	<h5>환전 도우미</h5>
+	<form>
+		<table id="here">
+			<div class="form-group">
+		     	<input type="text" id="money" class="form-control" placeholder="원화로 입력해주세요">
+		    </div>
+		</table>
+		<input type="button" value="환전하기" id="exchange" class="btn btn-primary py-3 px-5"s>		
+	</form>
+
+    </div>
+</div>
+          
+          
           <div class="col-lg-9">
           	<div class="row">
           		<div class="col-md-4 ftco-animate">

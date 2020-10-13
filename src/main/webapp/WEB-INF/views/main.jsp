@@ -44,7 +44,6 @@
           <li class="nav-item">			<a href="<c:url value='/about'/>"			 class="nav-link">이용 방법</a></li>
           <li class="nav-item">			<a href="<c:url value='/tour'/>"			 class="nav-link">여행 정보</a></li>
           <li class="nav-item">			<a href="<c:url value='/eventSearch'/>"			 class="nav-link">이벤트</a></li>
-          <li class="nav-item">			<a href="<c:url value='/fly'/>"			 	  class="nav-link">비행기</a></li>
 <%--           <h1><a href="<c:url value='/eventSearch' /> ">이벤트</a></h1> --%>
          
           <li class="nav-item">			<a href="<c:url value='/map/mapmain'/>"		 class="nav-link">지도 정보</a></li>
