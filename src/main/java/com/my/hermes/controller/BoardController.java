@@ -2,6 +2,8 @@ package com.my.hermes.controller;
 
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -54,5 +56,19 @@ public class BoardController {
 			return "/board/boardWrite";
 		}
 		return "redirect:/board/boardmain";
+	}
+	
+	// 게시판 파일 다운로드
+	@RequestMapping(value = "/board/download", method = RequestMethod.GET)
+	public void download(int board_num, HttpServletResponse response) {
+		dao.download(board_num, response);
+	}
+	
+	// 게시판 파일 다운로드
+	@RequestMapping(value = "/board/replyWrite", method = RequestMethod.POST)
+	public String replyWrite(int board_num, HttpServletResponse response) {
+		dao.download(board_num, response);
+		
+		return "";
 	}
 }

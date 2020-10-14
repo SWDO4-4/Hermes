@@ -84,12 +84,7 @@ body{
           <div class="col-md-8 ftco-animate">
             <h2 class="mb-3">${requestScope.vo.board_title}</h2>
             <p>${requestScope.vo.board_content}</p>
-            <p>
-              <img src='<c:url value="/resources/images/image_7.jpg"/>' alt="" class="img-fluid">
-            </p>
-            <p>
-              <img src='<c:url value="/resources/images/image_8.jpg"/>' alt="" class="img-fluid">
-            </p>
+            <p>첨부파일 : <a href="<c:url value='/board/download?board_num=${requestScope.vo.board_num}'/>">${requestScope.vo.board_orifile}</a></p>
             
             <div class="about-author d-flex p-5 bg-light">
               <div class="bio align-self-md-center mr-5">
@@ -121,7 +116,8 @@ body{
               
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">리플 달기</h3>
-                <form action="#" class="p-5 bg-light">
+                
+                <form action="<c:url value='/board/replyWrite' />" class="p-5 bg-light" method="post">
                   <div class="form-group">
                     <label for="name">작성자</label>
                     <input type="text" class="form-control" id="name">
