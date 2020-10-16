@@ -45,12 +45,12 @@ public class MemberController {
 	// 로그인 기능
 	@RequestMapping(value = "/member/login", method = RequestMethod.POST)
 	public String loginGo(MemberVO vo, HttpSession httpSession) {
-		ArrayList<MemberVO> result = dao.login(vo);
+		MemberVO result = dao.login(vo);
 		if (result == null) {
 			return "/member/loginForm";
 		} else {
 			httpSession.setAttribute("userid", vo.getUser_id());
-			httpSession.setAttribute("useremail", result.get(0).getUser_email());
+			httpSession.setAttribute("useremail", vo.getUser_email());
 			return "redirect:/";
 		}
 	}
@@ -89,14 +89,14 @@ public class MemberController {
 		HashMap<String, Object> userinfo = kakao.getUserInfo(token);
 		String email = (String) userinfo.get("email");
 		vo.setUser_email(email);
-		ArrayList<MemberVO> result = dao.kakaologin(vo);
+		String result = dao.kakaologin(vo);
 		if (result == null) {
 			model.addAttribute("email", email);
 			return "/member/signup";			
 		}
 		else {
-			session.setAttribute("userid", result.get(0).getUser_id());
-			session.setAttribute("useremail", result.get(0).getUser_email());
+			session.setAttribute("userid", result);
+			session.setAttribute("useremail", email);
 		}
 		return "redirect:/";
 	}
@@ -111,14 +111,14 @@ public class MemberController {
 	@RequestMapping(value = "/naver/login", method = RequestMethod.GET)
 	public String naverLogin(String email,MemberVO vo,Model model,HttpSession session) {
 		vo.setUser_email(email);
-		ArrayList<MemberVO> result = dao.kakaologin(vo);
+		String result = dao.kakaologin(vo);
 		if (result == null) {
 			model.addAttribute("email", email);
 			return "/member/signup";			
 		}
 		else {
-			session.setAttribute("userid", result.get(0).getUser_id());
-			session.setAttribute("useremail", result.get(0).getUser_email());
+			session.setAttribute("userid", result);
+			session.setAttribute("useremail", email);
 		}
 		return "redirect:/";
 	}

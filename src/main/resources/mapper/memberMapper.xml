@@ -25,9 +25,9 @@
 	)
 	</insert>
 	
-	<select id="kakaologin" parameterType="member" resultType="member">
+	<select id="kakaologin" parameterType="member" resultType="String">
 	SELECT
-		*
+		user_id
 	FROM
 		hermes_user
 	WHERE
