@@ -62,13 +62,14 @@
   </nav>
     <!-- END nav -->
  
-    <div class="hero-wrap js-fullheight" style="background-image: url(https://d1blyo8czty997.cloudfront.net/tour-photos/1435/1200x600/5178241972.jpg);">
+     <div class="hero-wrap js-fullheight" style="background-image: url(https://d1blyo8czty997.cloudfront.net/tour-photos/1435/1200x600/5178241972.jpg);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-9 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span>다양한 여행정보를 한눈에</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">여행 정보</h1>
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> 
+            <span class="mr-2"><a href="<c:url value='/tour'/>">여행지 메인으로</a></span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">여행지 소개</h1>
           </div>
         </div>
       </div>
@@ -78,20 +79,28 @@
     <section class="ftco-section ftco-degree-bg">
       <div class="container">
         <div class="row">
-        	<div class="col-lg-3 sidebar ftco-animate">
+        	<div class="col-lg-3 sidebar">
         		<div class="sidebar-wrap bg-light ftco-animate">
-        			<h3 class="heading mb-4">지역을 검색하세요</h3>
+        			<h3 class="heading mb-4">도시 검색</h3>
         			<form action="#">
         				<div class="fields">
 		              <div class="form-group">
-		                <input type="text" class="form-control" placeholder="도시, 지역, 목적지">
+		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
 		              <div class="form-group">
 		                <div class="select-wrap one-third">
-	                  	</div>
+	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                    <select name="" id="" class="form-control" placeholder="도시 입력">
+	                      <option value="">도시를 입력하세요</option>
+	                      <option value="">도쿄</option>
+	                      <option value="">오사카</option>
+	                      <option value="">교토</option>
+	                      <option value="">고베</option>
+	                    </select>
+	                  </div>
 		              </div>
 		              <div class="form-group">
-		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
+		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>
 		            </div>
 	            </form>
@@ -99,137 +108,66 @@
           </div>
           <div class="col-lg-9">
           	<div class="row">
-          		<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
-		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
+          		<div class="col-md-12 ftco-animate">
+          			<div class="single-slider owl-carousel">
+          				<div class="item">
+          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/211_kiyomizudera.jpg');"></div>
+          				</div>
+          				<div class="item">
+          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1141_gion.jpg');"></div>
+          				</div>
+          				<div class="item">
+          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1131_kyoto-tower.jpg');"></div>
+          				</div>
+          			</div>
+          		</div>
+          		<div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
+          			<span>주요 도시 &amp; 관광지</span>
+          			<h2>교토</h2>
+          			<p class="rate mb-5">
+          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 서부</a></span>
+    						</p>
+    						<p>교토의 관광지 인기순</p>
+    						<div class="d-md-flex mt-5 mb-5">
+    							<ul>
+	    							<li>1. 아리시야마</li>
+	    							<li>2. 기요미즈데라</li>
+	    							<li>3. 킨카쿠지 금각사 </li>
+	    							<li>4. 킨카쿠지 은각사 </li>
+	    						</ul>
+	    						<ul class="ml-md-5">
+	    							<li>5. 교토 역</li>
+	    							<li>6. 산넨자카</li>
+	    							<li>7. 시조가와라마치</li>
+	    							<li>8. 난젠지</li>
+	    						</ul>
     						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">Tokyo</span>
-		    							</div>
-		    						</div>
-		    						<p>도쿄 타워</p>
-		    						<p class="days"><span>일본 수도이자 최대의 도시</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="<c:url value='/tour/osaka'/>" class="img img-2 d-flex justify-content-center align-items-center" 
-		    						style="background-image: url('https://resources.matcha-jp.com/resize/720x2000/2016/10/26-6796.jpeg');">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/osaka'/>">오사카</a></h3>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">Osaka</span>
-		    							</div>
-		    						</div>
-		    						<p>도톤보리</p>
-		    						<p class="days"><span>서일본 최대의 도시</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="<c:url value='/tour/kyoto'/>" class="img img-2 d-flex justify-content-center align-items-center" 
-		    						style="background-image: url('https://t1.daumcdn.net/cfile/tistory/994AC94B5CB3441A04');">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/kyoto'/>">교토</a></h3>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">Kyoto</span>
-		    							</div>
-		    						</div>
-		    						<p>기요미즈데라</p>
-		    						<p class="days"><span>역사와 전통의 도시</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
-		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">Tokyo</span>
-		    							</div>
-		    						</div>
-		    						<p>도쿄 타워</p>
-		    						<p class="days"><span>일본 수도이자 최대의 도시</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i>지도 정보</span> 
-		    							<span class="ml-auto"><a href="#">날씨</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-          	</div>
-          	<div class="row mt-5">
-		          <div class="col text-center">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
+    						<p>일본의 역사와 전통을 가장 잘 접할 수 있는 도시 교토. 
+    						일본의 옛 수도답게 헤이안 시대의 문화가 남아있는 절, 신사, 역사 유적지가 대표적인 관광지이다. 
+    						벚꽃, 단풍 명소로도 유명하다.
+    						 교토는 가장 유명한 건출물인 금각사를 포함해 세계 문화 유산만 17가지를 가지고 있어, 
+    						 천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 
+    						 생선 정식 요리인 교카이세키가 유명하고, 
+    						 영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
+    						 교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다.</p>
+          		</div>
+          		<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
+          			<h4 class="mb-4">여행 동영상</h4>
+          			<div class="block-16">
+		              <figure>
+		                <img src='https://kyoto.travel/info/getting-to-kyoto/l0fe8b0000000z4d-img/ix.1585613499928.jpg' alt="Image placeholder" class="img-fluid">
+		                <a href="https://www.youtube.com/watch?v=bcjJ1UXdpg4" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+		              </figure>
 		            </div>
-		          </div>
-		        </div>
+          		</div>         		
+          	</div>
           </div> <!-- .col-md-8 -->
         </div>
       </div>
     </section> <!-- .section -->
+
+
+
   
 
     
