@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>헤르메스 - 일본 여행의 길잡이</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
 	
@@ -28,9 +29,275 @@
     <link rel="stylesheet" href="<c:url value='/resources/css/flaticon.css'/>">
     <link rel="stylesheet" href="<c:url value='/resources/css/icomoon.css'/>">
     <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">
+
+<style type="text/css">
+      
+       .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+        
+      #mode-selector {
+        color: #fff;
+        background-color: #f85959;
+        margin-left: 0px;
+        padding: 5px 11px 0px 11px;
+        text-align: center;
+        align-content: left;
+      }
+
+      #mode-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+     
+      @media print {
+        #map {
+          height: 1000px;
+          margin: 0;
+        }    
+      }
+      
+</style>
+
+
+
+<script>
+      "use strict";
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script
+      // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+     let map;
+      function initMap() {
+    	  var center={
+  	            lat: 35.6894875,
+  	            lng: 139.6917064
+  	          }
+    	  const localContextMapView = new google.maps.localContext.LocalContextMapView({
+    	        element: document.getElementById('map'),
+    	        placeTypePreferences: ['restaurant', 'tourist_attraction','cafe','department_store','hospital'],
+    	        maxPlaceCount: 24,
+    	        
+    	        directionsOptions: { origin: center },
+    	      });
+
+    	      map = localContextMapView.map;
+    	     
+    	      map.setOptions({
+    	    	  mapTypeControl: true,
+    	          center: {
+    	            lat: 35.6894875,
+    	            lng: 139.6917064
+    	          },
+    	          zoom: 13
+    	        });
+    	    
+        new AutocompleteDirectionsHandler(map);
+  
+      }
+
+      class AutocompleteDirectionsHandler {
+        constructor(map) {
+          this.map = map;
+          this.originPlaceId = "";
+          this.destinationPlaceId = "";
+          this.waypointsPlaceId = "";
+          this.waypoints1PlaceId = "";
+          this.waypoints2PlaceId = "";
+          this.waypoints3PlaceId = "";
+          this.waypoints4PlaceId = "";
+        
+         
+          
+          this.travelMode = google.maps.TravelMode.WALKING;
+          this.directionsService = new google.maps.DirectionsService();
+          this.directionsRenderer = new google.maps.DirectionsRenderer();
+
+           this.directionsRenderer.setMap(map);
+          this.directionsRenderer.setPanel(document.getElementById("right-panel"));
+          const control = document.getElementById("mode-selector");
+	
+      
+    
+          const originInput = document.getElementById("origin-input");
+          const  way1= [];
+          
+         
+         const waypointsInput = document.getElementById("waypoints-input");
+         const waypointsInput1 = document.getElementById("waypoints-input1");
+         const waypointsInput2 = document.getElementById("waypoints-input2");
+         const waypointsInput3 = document.getElementById("waypoints-input3");
+         const waypointsInput4 = document.getElementById("waypoints-input4");
+        
+     
+			
+         
+      
+         const destinationInput = document.getElementById("destination-input");
+          const modeSelector = document.getElementById("mode-selector");
+        
+          const originAutocomplete = new google.maps.places.Autocomplete(
+            originInput
+          ); // Specify just the place data fields that you need.
+
+          originAutocomplete.setFields(["place_id"]);
+			
+        const waypointsAutocomplete = new google.maps.places.Autocomplete(
+                  waypointsInput
+                ); // Specify just the place data fields that you need.
+
+                waypointsAutocomplete.setFields(["place_id"]);
+        		
+                const waypoints1Autocomplete = new google.maps.places.Autocomplete(
+                        waypointsInput1
+                      ); // Specify just the place data fields that you need.
+
+                      waypoints1Autocomplete.setFields(["place_id"]);
+
+                        const waypoints2Autocomplete = new google.maps.places.Autocomplete(
+                              waypointsInput2
+                            ); // Specify just the place data fields that you need.
+
+                            waypoints2Autocomplete.setFields(["place_id"]);
+
+                             const waypoints3Autocomplete = new google.maps.places.Autocomplete(
+                                    waypointsInput3
+                                  ); // Specify just the place data fields that you need.
+
+                                  waypoints3Autocomplete.setFields(["place_id"]);
+                                  const waypoints4Autocomplete = new google.maps.places.Autocomplete(
+                                          waypointsInput4
+                                        ); // Specify just the place data fields that you need.
+
+                                        waypoints4Autocomplete.setFields(["place_id"]);
+
+            
+       
+          const destinationAutocomplete = new google.maps.places.Autocomplete(
+            destinationInput
+          ); // Specify just the place data fields that you need.
+
+          destinationAutocomplete.setFields(["place_id"]);
+          this.setupClickListener(
+            "changemode-walking",
+            google.maps.TravelMode.WALKING
+          );
+          this.setupClickListener(
+            "changemode-driving",
+            google.maps.TravelMode.DRIVING
+          );
+
+         
+          
+          this.setupPlaceChangedListener(originAutocomplete, "ORIG");
+          this.setupPlaceChangedListener(waypointsAutocomplete, "WAY");
+          this.setupPlaceChangedListener(waypoints1Autocomplete, "WAY1");
+          this.setupPlaceChangedListener(waypoints2Autocomplete, "WAY2");
+          this.setupPlaceChangedListener(waypoints3Autocomplete, "WAY3");
+          this.setupPlaceChangedListener(waypoints4Autocomplete, "WAY4");
+         
+        this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
+         
+        } // Sets a listener on a radio button to change the filter type on Places
+        // Autocomplete.
+
+        setupClickListener(id, mode) {
+          const radioButton = document.getElementById(id);
+          radioButton.addEventListener("click", () => {
+            this.travelMode = mode;
+            this.route();
+          });
+        }
+
+        setupPlaceChangedListener(autocomplete, mode) {
+          autocomplete.bindTo("bounds", this.map);
+          autocomplete.addListener("place_changed", () => {
+            const place = autocomplete.getPlace();
+
+            if (!place.place_id) {
+              window.alert("값을 다 입력해주세요.");
+              return;
+            }
+
+            if (mode === "ORIG") {
+              this.originPlaceId = place.place_id;
+              this.waypointsPlaceId = place.place_id;
+              this.waypoints1PlaceId = place.place_id;
+              this.waypoints2PlaceId = place.place_id;
+              this.waypoints3PlaceId = place.place_id;
+              this.waypoints4PlaceId = place.place_id;
+             
+            } 
+             else {
+                this.destinationPlaceId = place.place_id;
+            
+               
+               
+               
+               
+            }
+
+            this.route();
+          });
+        }
+			
+        route() {
+          if (!this.originPlaceId || !this.destinationPlaceId  || !this.waypointsPlaceId) {
+            return;
+          }
+          const  way= [];
+          const waypointsInput = document.getElementById("waypoints-input");
+          const checkboxArray = document.getElementsByName("waypoints-input");
+        
+          var a=0;
+        	 for (let i = 0; i < checkboxArray.length; i++) {
+           	if(checkboxArray[a].value !=""){
+             	way.push({
+                	 location: checkboxArray[a].value,
+                	 stopover: true
+              	 });
+             	 a=a+1;
+               }
+           }console.log(way);
+           
+          const me = this;
+     
+          this.directionsService.route(
+            {
+              origin: {
+                placeId: this.originPlaceId
+              },
+               waypoints: 
+                   way,
+              destination: {
+                placeId:  this.destinationPlaceId
+              },
+              optimizeWaypoints: false,
+              travelMode: this.travelMode
+            },
+            (response, status) => {
+              if (status === "OK") {
+                me.directionsRenderer.setDirections(response);
+              } else {
+                window.alert("모든 값을 입력해주세요." + status);
+              }
+            }
+          );
+        }
+      }
+    </script>
   </head>
   <body>
-    
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="/hermes">Hermes</a>
@@ -60,6 +327,7 @@
   </nav>
     <!-- END nav -->
     
+    
      <div class="hero-wrap js-fullheight" style="background-image: url(https://holidaygolf.co.kr/wp-content/uploads/2017/04/dvwbivi5.jpg);">
       <div class="overlay"></div>
       <div class="container">
@@ -71,6 +339,63 @@
         </div>
       </div>
     </div>
+
+	 <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+			<div class="col-lg-3 sidebar">
+        		<div class="sidebar-wrap bg-light ftco-animate">
+        			<h3 class="heading mb-4">경유지 검색</h3>
+        				<div class="fields">
+		              <div class="form-group">
+		                <input type="text" id="origin-input" class="form-control" placeholder="출발지">
+		              </div>
+		                 <input id="waypoints-input" name="waypoints-input" class="controls" type="text" placeholder="경유지">
+				       	 <input id="waypoints-input1" name="waypoints-input" class="controls" type="text" placeholder="경유지">
+				      	 <input id="waypoints-input2" name="waypoints-input" class="controls" type="text" placeholder="경유지">
+				         <input id="waypoints-input3" name="waypoints-input" class="controls" type="text" placeholder="경유지">
+				         <input id="waypoints-input4" name="waypoints-input" class="controls" type="text" placeholder="경유지">
+		              
+		              <br><br>
+		           
+					  <br>
+		              <input id="destination-input" class="form-control" type="text" placeholder="목적지">
+		              <br>
+		              <div class="form-group">
+		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
+		              </div>
+		            </div>
+        		</div>
+        	 </div>
+        	 
+        	<div class="col-lg-9">
+          	<div class="row">
+          		<div class="col-md-12 ftco-animate">
+          				<div class="com-md-6" id="map" style="height: 600px; width: 100% "></div>	
+          			</div>
+          		</div>         		
+          	</div>
+	          	
+		     <div id="right-panel" style="margin-left: 30px">
+		      	<div>
+			      	<div id="mode-selector" class="controls">
+				        <input type="radio"name="type" id="changemode-walking" checked="checked">
+				        <label for="changemode-walking">도보</label>
+				        &nbsp;&nbsp;&nbsp;
+				        <input type="radio" name="type" id="changemode-driving">
+				        <label for="changemode-driving">운전</label>
+			   		</div>
+		 	   </div>     
+			</div>
+          	
+          	
+			</div>
+       </div>
+      </section>
+
+
+
+<!-- start footer -->
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -150,7 +475,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=localContext,places&v=beta&weekly&key=AIzaSyDtPfXJlAmrQo3VE2gaHIkejYe0urbhoO0&callback=initMap"defer></script>
   <script src="<c:url value='/resources/js/jquery.min.js'/>"></script>
   <script src="<c:url value='/resources/js/jquery-migrate-3.0.1.min.js'/>"></script>
   <script src="<c:url value='/resources/js/popper.min.js'/>"></script>
@@ -165,8 +491,6 @@
   <script src="<c:url value='/resources/js/bootstrap-datepicker.js'/>"></script>
   <script src="<c:url value='/resources/js/jquery.timepicker.min.js'/>"></script>
   <script src="<c:url value='/resources/js/scrollax.min.js'/>"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="<c:url value='/resources/js/google-map.js'/>"></script>
   <script src="<c:url value='/resources/js/main.js'/>"></script>
     
   </body>

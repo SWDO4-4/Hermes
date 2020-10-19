@@ -297,7 +297,7 @@ $(function(){
           	<div class="row">
           		<div class="col-md-4 ftco-animate">
 		    				<div class="destination">
-		    					<a href="<c:url value='/tour/tourinfo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
 		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -306,7 +306,7 @@ $(function(){
 		    					<div class="text p-3">
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/tourinfo'/>">도쿄</a></h3>
+				    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
 			    						</div>
 			    						<div class="two">
 			    							<span class="price">Tokyo</span>
@@ -316,7 +316,91 @@ $(function(){
 		    						<p class="days"><span>일본 수도이자 최대의 도시</span></p>
 		    						<hr>
 		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i>공항편</span> 
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/osaka'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://resources.matcha-jp.com/resize/720x2000/2016/10/26-6796.jpeg');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/osaka'/>">오사카</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Osaka</span>
+		    							</div>
+		    						</div>
+		    						<p>도톤보리</p>
+		    						<p class="days"><span>서일본 최대의 도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/kyoto'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://t1.daumcdn.net/cfile/tistory/994AC94B5CB3441A04');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/kyoto'/>">교토</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Kyoto</span>
+		    							</div>
+		    						</div>
+		    						<p>기요미즈데라</p>
+		    						<p class="days"><span>역사와 전통의 도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Tokyo</span>
+		    							</div>
+		    						</div>
+		    						<p>도쿄 타워</p>
+		    						<p class="days"><span>일본 수도이자 최대의 도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
 		    							<span class="ml-auto"><a href="#">날씨</a></span>
 		    						</p>
 		    					</div>

@@ -14,9 +14,18 @@ public class TourController {
 		return "tour";
 	}
 	
-	// 여행정보 상세 확인
-	@RequestMapping(value = "/tour/tourinfo", method = RequestMethod.GET)
-	public String tourinfo() {
-		return "/tour/tourinfo";
+	@RequestMapping(value = "/tour/tokyo", method = RequestMethod.GET)
+	public String tokyo() {
+		return "/tour/tokyo";
+	}
+	
+	@RequestMapping(value = "/tour/osaka", method = RequestMethod.GET)
+	public String osaka() {
+		return "/tour/osaka";
+	}
+	
+	@RequestMapping(value = "/tour/kyoto", method = RequestMethod.GET)
+	public String kyoto() {
+		return "/tour/kyoto";
 	}
 }

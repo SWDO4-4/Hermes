@@ -16,6 +16,7 @@
 			alert("아이디를 입력해주세요.");
 			return false;
 		}
+		
 		if(useridDoc.value.length < 3 || useridDoc.value.length > 12) {
 			alert("아이디는 3~12글자로 입력해 주세요.");
 			return false;

@@ -17,8 +17,8 @@ public class MemberDAO {
 	private SqlSession session;
 	
 	// 로그인 기능
-	public MemberVO login(MemberVO vo) {
-		MemberVO result = null;
+	public String login(MemberVO vo) {
+		String result = null;
 		try {
 			MemberMapper mapper = session.getMapper(MemberMapper.class);
 			result = mapper.login(vo);
@@ -47,8 +47,8 @@ public class MemberDAO {
 	}
 	
 	// 카카오 로그인 기능
-		public String kakaologin(MemberVO vo) {
-			String result = null;
+		public ArrayList<MemberVO> kakaologin(MemberVO vo) {
+			ArrayList<MemberVO> result = null;
 			try {
 				MemberMapper mapper = session.getMapper(MemberMapper.class);
 				result = mapper.kakaologin(vo);

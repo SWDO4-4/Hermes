@@ -146,27 +146,20 @@
 						<div class="container">
 							<div class="signup-content">
 								<div class="signup-form">
-									<form action="<c:url value='/member/login'/>" method="POST"
-										class="register-form" id="register-form"
-										onsubmit="return formCheck()">
+									<form action="<c:url value='/member/login'/>" method="POST" class="register-form" id="register-form" onsubmit="return formCheck()">
 										<div class="form-group">
-											<label for="name"><i
-												class="zmdi zmdi-account material-icons-name"></i></label> <input
-												type="text" name="user_id" id="userid" placeholder="아이디" />
+											<label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label> 
+											<input type="text" name="user_id" id="userid" placeholder="아이디" />
 										</div>
 										<div class="form-group">
-											<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
-												type="password" name="user_pwd" id="userpwd"
-												placeholder="비밀번호" />
+											<label for="pass"><i class="zmdi zmdi-lock"></i></label> 
+											<input type="password" name="user_pwd" id="userpwd" placeholder="비밀번호" />
 										</div>
 										<div class="form-group form-button">
-											<input type="submit" name="login" id="login"
-												class="form-submit" value="로그인" />
+											<input type="submit" name="login" id="login" class="form-submit" value="로그인" />
 										</div>
 										<div class="form-group form-button">
-											<img
-												src="<c:url value='/resources/images/kakao_login.png' />"
-												id="login-button">
+											<img src="<c:url value='/resources/images/kakao_login.png' />" id="login-button">
 										</div>
 										<!-- 네이버아이디로로그인 버튼 노출 영역 -->
 										<div id="naverIdLogin"></div>
@@ -191,8 +184,7 @@
 									</form>
 								</div>
 								<div class="signup-image">
-									<a href="/hermes" class="signup-image-link"
-										style="color: white">메인 화면으로 돌아가기</a>
+									<a href="/hermes" class="signup-image-link" style="color: white">메인 화면으로 돌아가기</a>
 								</div>
 							</div>
 						</div>
