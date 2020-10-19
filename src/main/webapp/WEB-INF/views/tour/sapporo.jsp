@@ -87,7 +87,7 @@
 		              <div class="form-group">
 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
-
+		              
 		              <div class="form-group">
 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>
@@ -100,52 +100,49 @@
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/211_kiyomizudera.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://3.bp.blogspot.com/-eJONm8tKgOM/XDmkLDbLIpI/AAAAAAAAAYU/mOzTKK9u2sM7I40GMT0-ilEy9hjjMMGLACLcBGAs/s1600/KakaoTalk_20190112_172243976.jpg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1141_gion.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://www.koreatimes.net/images/attach/PSHW4OZG564MAVI-2017042813045131/20170428-13042069.jpg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1131_kyoto-tower.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://www.agoda.com/wp-content/uploads/2019/01/%E6%9C%AD%E5%B9%8C_%E3%82%82%E3%81%84%E3%82%8F%E5%B1%B1_%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0-1024x717.jpg');"></div>
           				</div>
           			</div>
           		</div>
           		<div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
           			<span>주요 도시 &amp; 관광지</span>
-          			<h2>교토</h2>
+          			<h2>삿포로</h2>
           			<p class="rate mb-5">
-          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 서부</a></span>
+          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 홋카이도 남서부</a></span>
     						</p>
-    						<p>교토의 관광지 인기순</p>
+    						<p>삿포로의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>
-	    							<li>1. 아리시야마</li>
-	    							<li>2. 기요미즈데라</li>
-	    							<li>3. 킨카쿠지 금각사 </li>
-	    							<li>4. 킨카쿠지 은각사 </li>
+	    							<li>1. 스스키노</li>
+	    							<li>2. 삿포로 텔레비전 타워</li>
+	    							<li>3. 나카지마 공원</li>
+	    							<li>4. 니조이치바</li>
 	    						</ul>
 	    						<ul class="ml-md-5">
-	    							<li>5. 교토 역</li>
-	    							<li>6. 산넨자카</li>
-	    							<li>7. 시조가와라마치</li>
-	    							<li>8. 난젠지</li>
+	    							<li>5. 오도리 공원</li>
+	    							<li>6. 모이와야마</li>
+	    							<li>7. 라멘요코쵸</li>
+	    							<li>8. 스텔라 플레이스</li>
 	    						</ul>
     						</div>
-    						<p>일본의 역사와 전통을 가장 잘 접할 수 있는 도시 교토. 
-    						일본의 옛 수도답게 헤이안 시대의 문화가 남아있는 절, 신사, 역사 유적지가 대표적인 관광지이다. 
-    						벚꽃, 단풍 명소로도 유명하다.
-    						 교토는 가장 유명한 건출물인 금각사를 포함해 세계 문화 유산만 17가지를 가지고 있어, 
-    						 천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 
-    						 생선 정식 요리인 교카이세키가 유명하고, 
-    						 영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
-    						 교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다.</p>
+    						<p>겨울과 맥주가 유명한 도시 삿포로. 
+    						북해도의 중심이자 대자연으로 둘러싸인 삿포로는 일본인들이 가장 살고싶어하는 도시로 꼽힌다. 
+    						여름에는 서늘하고 겨울에는 눈이 내린 절경으로 유명하며, 특히 겨울에 세계 3대 축제 중 하나인 삿포로 눈축제가 열려 많은 관광객들이 온다. 
+    						모이와산 로프웨이 케이블카를 타고 삿포로의 야경을 감상하는 것은 삿포로 관광의 필수 코스로 불린다. 
+    						맥주와 함께 스스키노역의 라멘골목, 수프카레, 쟈카바타가 유명해 식도락 여행으로도 좋다.</p>
           		</div>
           		<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">여행 동영상</h4>
           			<div class="block-16">
 		              <figure>
-		                <img src='https://kyoto.travel/info/getting-to-kyoto/l0fe8b0000000z4d-img/ix.1585613499928.jpg' alt="Image placeholder" class="img-fluid">
-		                <a href="https://www.youtube.com/watch?v=bcjJ1UXdpg4" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+		                <img src='https://3.bp.blogspot.com/-eJONm8tKgOM/XDmkLDbLIpI/AAAAAAAAAYU/mOzTKK9u2sM7I40GMT0-ilEy9hjjMMGLACLcBGAs/s1600/KakaoTalk_20190112_172243976.jpg' alt="Image placeholder" class="img-fluid">
+		                <a href="https://www.youtube.com/watch?v=qKYvSPJ2GHw" class="play-button popup-vimeo"><span class="icon-play"></span></a>
 		              </figure>
 		            </div>
           		</div>         		
@@ -157,7 +154,8 @@
 
 
 
- 
+  
+
     
 
 

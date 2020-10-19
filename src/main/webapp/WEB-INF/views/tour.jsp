@@ -62,7 +62,7 @@
   </nav>
     <!-- END nav -->
  
-    <div class="hero-wrap js-fullheight" style="background-image: url(https://d1blyo8czty997.cloudfront.net/tour-photos/1435/1200x600/5178241972.jpg);">
+    <div class="hero-wrap js-fullheight" style="background-image: url(https://t1.daumcdn.net/thumb/R1280x0/?fname=http%3A//t1.daumcdn.net/brunch/service/user/STq/image/QRoo3Gklw_3mPM4mDeTd0afwPYo);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
@@ -185,8 +185,8 @@
 		    			
 		    			<div class="col-md-4 ftco-animate">
 		    				<div class="destination">
-		    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
-		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
+		    					<a href="<c:url value='/tour/gobe'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://lh3.googleusercontent.com/proxy/XTS_YgZ1MM0bHIEt8NXLJoHUAaOHRcBJEWca83VI0YW161HdZmf0wePtB3IBwikKnD3zKyJx3vTRrJhrxvNZk2CbyHyA79G8OFVHW5Adpz8mNlxt4UOG_D0PSC10Q0FultHPtOurCJRTz6X5sIt0WRCFAMvNxwupYoY4Py6i_a_FISTgD4p7Y7tYmK8ZUshp-lYZhy_KGxiM6tRGEnGTYrsBmpicEeD0mw7OY2UVdShiXf3gQnjsrD1Dto0ExBiNVuLcZihATjPqdsEoyuYH619Hdo2D65vZhsOuAHqGJ84yBbVoHjveJLYaFvlXcJE2jxiQkw4');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
     						</div>
@@ -194,18 +194,130 @@
 		    					<div class="text p-3">
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
+				    						<h3><a href="<c:url value='/tour/gobe'/>">고베</a></h3>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">Tokyo</span>
+			    							<span class="price">Kobe</span>
 		    							</div>
 		    						</div>
-		    						<p>도쿄 타워</p>
-		    						<p class="days"><span>일본 수도이자 최대의 도시</span></p>
+		    						<p>고베 포트 타워</p>
+		    						<p class="days"><span>일본의 국제무역도시</span></p>
 		    						<hr>
 		    						<p class="bottom-area d-flex">
 		    							<span><i class="icon-map-o"></i>지도 정보</span> 
 		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/yokohama'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002974/img/basic/a0002974_main.jpg?20200925182954&q=80&rw=750&rh=536');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/gobe'/>">요쿄하마</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Yokohama</span>
+		    							</div>
+		    						</div>
+		    						<p>요코하마 역</p>
+		    						<p class="days"><span>도심 테마의 세련된 도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/nagoya'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://resources.matcha-jp.com/original/2018/08/26-61341.jpeg');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/nagoya'/>">나고야</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Nagoya</span>
+		    							</div>
+		    						</div>
+		    						<p>오아시스21</p>
+		    						<p class="days"><span>세계 최대의 역</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="#">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/nara'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://d2ahiw9kb7is19.cloudfront.net/-/media/9BC8F188D47543AEAAE92BFA4F5FE86E.jpg?d=20180129T014150&w=750');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/nara'/>">나라</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Nara</span>
+		    							</div>
+		    						</div>
+		    						<p>사슴 공원</p>
+		    						<p class="days"><span>사슴과 전통의 도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="<c:url value='/tour/nara'/>">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/sapporo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://www.agoda.com/wp-content/uploads/2019/01/%E6%9C%AD%E5%B9%8C_%E3%82%82%E3%81%84%E3%82%8F%E5%B1%B1_%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0-1024x717.jpg');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/sapporo'/>">삿포로</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Sapporo</span>
+		    							</div>
+		    						</div>
+		    						<p>삿포로 야경</p>
+		    						<p class="days"><span>눈과 축제의 도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="<c:url value='/tour/sapporo'/>">날씨</a></span>
 		    						</p>
 		    					</div>
 		    				</div>

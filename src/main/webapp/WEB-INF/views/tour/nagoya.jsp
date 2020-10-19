@@ -6,29 +6,20 @@
     <title>헤르메스 - 일본 여행의 길잡이</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
-	
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">	
     <link rel="stylesheet" href="<c:url value='/resources/css/open-iconic-bootstrap.min.css'/>">
-    <link rel="stylesheet" href="<c:url value='/resources/css/animate.css'/>">
-    
+    <link rel="stylesheet" href="<c:url value='/resources/css/animate.css'/>">  
     <link rel="stylesheet" href="<c:url value='/resources/css/owl.carousel.min.css'/>">
     <link rel="stylesheet" href="<c:url value='/resources/css/owl.theme.default.min.css'/>">
     <link rel="stylesheet" href="<c:url value='/resources/css/magnific-popup.css'/>">
-
     <link rel="stylesheet" href="<c:url value='/resources/css/aos.css'/>">
-
     <link rel="stylesheet" href="<c:url value='/resources/css/ionicons.min.css'/>">
-
     <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap-datepicker.css'/>">
-    <link rel="stylesheet" href="<c:url value='/resources/css/jquery.timepicker.css'/>">
-
-    
+    <link rel="stylesheet" href="<c:url value='/resources/css/jquery.timepicker.css'/>"> 
     <link rel="stylesheet" href="<c:url value='/resources/css/flaticon.css'/>">
     <link rel="stylesheet" href="<c:url value='/resources/css/icomoon.css'/>">
-    <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">
-    
+    <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">  
     <link rel="stylesheet" href="<c:url value='/resources/fonts/material-icon/css/material-design-iconic-font.min.css'/>">
   </head>
   <body>
@@ -39,7 +30,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> 메뉴
       </button>
-
        <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">			<a href="<c:url value='/'/>" 				class="nav-link">메인 화면</a></li>
@@ -75,7 +65,6 @@
       </div>
     </div>
 
-
     <section class="ftco-section ftco-degree-bg">
       <div class="container">
         <div class="row">
@@ -87,7 +76,7 @@
 		              <div class="form-group">
 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
-
+		              
 		              <div class="form-group">
 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>
@@ -100,52 +89,50 @@
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/211_kiyomizudera.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://resources.matcha-jp.com/resize/720x2000/2018/08/28-61398.jpeg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1141_gion.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://resources.matcha-jp.com/resize/720x2000/2018/08/27-61347.jpeg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1131_kyoto-tower.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://resources.matcha-jp.com/resize/720x2000/2018/08/26-61340.jpeg');"></div>
           				</div>
           			</div>
           		</div>
           		<div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
           			<span>주요 도시 &amp; 관광지</span>
-          			<h2>교토</h2>
+          			<h2>나고야</h2>
           			<p class="rate mb-5">
-          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 서부</a></span>
+          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 아이치현</a></span>
     						</p>
-    						<p>교토의 관광지 인기순</p>
+    						<p>나고야의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>
-	    							<li>1. 아리시야마</li>
-	    							<li>2. 기요미즈데라</li>
-	    							<li>3. 킨카쿠지 금각사 </li>
-	    							<li>4. 킨카쿠지 은각사 </li>
+	    							<li>1. 사카에</li>
+	    							<li>2. 오아시스 21</li>
+	    							<li>3. 나고야항 </li>
+	    							<li>4. 콘파루 </li>
 	    						</ul>
 	    						<ul class="ml-md-5">
-	    							<li>5. 교토 역</li>
-	    							<li>6. 산넨자카</li>
-	    							<li>7. 시조가와라마치</li>
-	    							<li>8. 난젠지</li>
+	    							<li>5. 신야</li>
+	    							<li>6. 메이테츠 백화점</li>
+	    							<li>7. 시로토리 정원</li>
+	    							<li>8. 나고야 TV타워</li>
 	    						</ul>
     						</div>
-    						<p>일본의 역사와 전통을 가장 잘 접할 수 있는 도시 교토. 
-    						일본의 옛 수도답게 헤이안 시대의 문화가 남아있는 절, 신사, 역사 유적지가 대표적인 관광지이다. 
-    						벚꽃, 단풍 명소로도 유명하다.
-    						 교토는 가장 유명한 건출물인 금각사를 포함해 세계 문화 유산만 17가지를 가지고 있어, 
-    						 천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 
-    						 생선 정식 요리인 교카이세키가 유명하고, 
-    						 영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
-    						 교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다.</p>
+    						<p>일본 부권의 중심지 나고야에는 세계 최대의 역 나고야역이 있다. 
+    						나고야성, 도자기마을, TV타워 등 다양한 관광명소가 있다. 
+    						특히 명성이 자자한 온천명소가 많아 온천여행에 적합하다. 
+    						다채로운 먹거리 또한 빼놓을 수 없다. 
+    						미소까스, 닭날개 튀김, 장어덮밥, 새우튀김 주먹밥 등 식도락 여행을 즐길 수 있다. 
+    						100엔샵에서는 저렴하게 기념품을 구매 할 수 있다.</p>
           		</div>
           		<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">여행 동영상</h4>
           			<div class="block-16">
 		              <figure>
-		                <img src='https://kyoto.travel/info/getting-to-kyoto/l0fe8b0000000z4d-img/ix.1585613499928.jpg' alt="Image placeholder" class="img-fluid">
-		                <a href="https://www.youtube.com/watch?v=bcjJ1UXdpg4" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+		                <img src='https://resources.matcha-jp.com/original/2018/08/26-61341.jpeg' alt="Image placeholder" class="img-fluid">
+		                <a href="https://www.youtube.com/watch?v=yA4m80AC2D0" class="play-button popup-vimeo"><span class="icon-play"></span></a>
 		              </figure>
 		            </div>
           		</div>         		
@@ -157,7 +144,8 @@
 
 
 
- 
+  
+
     
 
 

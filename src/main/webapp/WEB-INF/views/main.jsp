@@ -315,7 +315,7 @@
     		<div class="row">
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" 
+    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
     					style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -324,10 +324,10 @@
     					<div class="text p-3">
     						<div class="d-flex">
     							<div class="one">
-		    						<h3><a href="#">도쿄</a></h3>
+		    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
 	    						</div>
 	    						<div class="two">
-	    							<span class="price">금액</span>
+	    							<span class="price">Tokyo</span>
     							</div>
     						</div>
     						<p>일본의 최대 도시이자 수도 도쿄. 
@@ -338,18 +338,17 @@
     						도쿄타워와 레인보우브릿지는 일본의 대표 야경 포인트이기도 하다. 
     						도쿄 디즈니랜드도 도쿄여행의 인기 코스다. 덴돈, 잔코나베, 무조림 등 
     						조촐한 맛집이 많아 식도락 여행으로도 제격.</p>
-    						<p class="days"><span>N개의 정보</span></p>
     						<hr>
     						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> 주변 지도 </span> 
-    							<span class="ml-auto"><a href="#">보러가기</a></span>
+    							<span><i class="icon-map-o"></i>여행 정보</span> 
+    							<span class="ml-auto"><a href="<c:url value='/tour/tokyo'/>">보러가기</a></span>
     						</p>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" 
+    					<a href="<c:url value='/tour/osaka'/>" class="img img-2 d-flex justify-content-center align-items-center" 
     					style="background-image: url('https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/mmgbxbfet2m7unj3yf4c/%EC%98%A4%EC%82%AC%EC%B9%B4%20%EC%95%84%ED%82%A4%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%AC%ED%8A%B8%20%EA%B3%A0%EC%B9%B4%ED%8A%B8.jpg');">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -358,28 +357,27 @@
     					<div class="text p-3">
     						<div class="d-flex">
     							<div class="one">
-		    						<h3><a href="#">오사카</a></h3>
+		    						<h3><a href="<c:url value='/tour/osaka'/>">오사카</a></h3>
 	    						</div>
 	    						<div class="two">
-	    							<span class="price">금액</span>
+	    							<span class="price">Osaka</span>
     							</div>
     						</div>
     						<p>일본 제2의 도시로 불릴 만큼 볼거리가 많은 오사카. 
     						오사카성이 대표적인 랜드마크이며, 특히 봄에 벚꽃이 폈을 때와 8월 등불축제 때 멋진 경관을 자랑한다. 
     						도톤보리에서의 맛집탐방과 신사이바시에서의 쇼핑코스는 대표적인 오사카 관광코스이다. 
     						숙소는 주로 번화가와 가까운 난바와 도톤보리 주변이 인기가 좋다.</p>
-    						<p class="days"><span>N개의 정보</span></p>
     						<hr>
     						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> 주변 지도</span> 
-    							<span class="ml-auto"><a href="#">보러가기</a></span>
+    							<span><i class="icon-map-o"></i>여행 정보</span> 
+    							<span class="ml-auto"><a href="<c:url value='/tour/osaka'/>">보러가기</a></span>
     						</p>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" 
+    					<a href="<c:url value='/tour/gobe'/>" class="img img-2 d-flex justify-content-center align-items-center" 
     					style="background-image: url('https://t1.daumcdn.net/cfile/tistory/2202BA345864C85D03');">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -388,10 +386,10 @@
     					<div class="text p-3">
     						<div class="d-flex">
     							<div class="one">
-		    						<h3><a href="#">고베</a></h3>
+		    						<h3><a href="<c:url value='/tour/gobe'/>">고베</a></h3>
 	    						</div>
 	    						<div class="two">
-	    							<span class="price">금액</span>
+	    							<span class="price">Gobe</span>
     							</div>
     						</div>
     						<p>일본에서 6번째로 큰 도시인 고베는 맛과 멋의 도시이다. 
@@ -399,18 +397,17 @@
     						철인 28호 동상과 함께 동심으로 돌아갈 수 있고, 모토마치는 대표적인 고베의 상점가로 쇼핑을 즐길 수 있다. 
     						일본 3대 와규중 하나인 고베소, 고베에만 있는 고베스위츠 등 다양한 먹거리가 있다. 
     						스타벅스 기타노이진칸점은 유형문화재로 등재되어 있어 한번 쯤 커피를 마실만 하다.</p>
-    						<p class="days"><span>N개의 정보</span></p>
     						<hr>
     						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> 주변 지도</span> 
-    							<span class="ml-auto"><a href="#">보러가기</a></span>
+    							<span><i class="icon-map-o"></i>여행 정보</span> 
+    							<span class="ml-auto"><a href="<c:url value='/tour/gobe'/>">보러가기</a></span>
     						</p>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" 
+    					<a href="<c:url value='/tour/kyoto'/>" class="img img-2 d-flex justify-content-center align-items-center" 
     					style="background-image: url('https://cdn.osaka-info.jp/fixtures/around-kansai-kyoto_ko_008.jpg');">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -419,7 +416,7 @@
     					<div class="text p-3">
     						<div class="d-flex">
     							<div class="one">
-		    						<h3><a href="#">교토</a></h3>
+		    						<h3><a href="<c:url value='/tour/kyoto'/>">교토</a></h3>
 	    						</div>
 	    						<div class="two">
 	    							<span class="price">금액</span>
@@ -432,18 +429,17 @@
     						천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 생선 정식 요리인 교카이세키가 유명하고, 
     						영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
     						교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다</p>
-    						<p class="days"><span>N개의 정보</span></p>
     						<hr>
     						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> 여행 정보</span> 
-    							<span class="ml-auto"><a href="#">보러가기</a></span>
+    							<span><i class="icon-map-o"></i>여행 정보</span> 
+    							<span class="ml-auto"><a href="<c:url value='/tour/kyoto'/>">보러가기</a></span>
     						</p>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" 
+    					<a href="<c:url value='/tour/nara'/>" class="img img-2 d-flex justify-content-center align-items-center" 
     					style="background-image: url('https://resources.matcha-jp.com/archive_files/jp/2015/01/-2015-01-07-16.26.17.png');">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -452,21 +448,20 @@
     					<div class="text p-3">
     						<div class="d-flex">
     							<div class="one">
-		    						<h3><a href="#">나라</a></h3>
+		    						<h3><a href="<c:url value='/tour/nara'/>">나라</a></h3>
 	    						</div>
 	    						<div class="two">
 	    							<span class="price">금액</span>
     							</div>
     						</div>
-    						<p>커여운 사슴들이 돌아다니는 나라. 
+    						<p>귀여운 사슴들이 돌아다니는 나라. 
     						오사카와 교토 근교에 위치하고 있어 잠깐 반나절 정도들리기 좋은 관광지이다. 
     						사슴공원에서 초록의 자연과 함께 사슴에게 먹이를 주던가 함께 운치있는 산책을 즐길 수 있다. 
     						사슴뿐만 아니라 일본에서 두번째로 높은 탑과 세계최대 목조 건물이라는 도다이지와 많은 일본의 국보를 볼 수 있는 관광지이다.</p>
-    						<p class="days"><span>N개의 정보</span></p>
     						<hr>
     						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> 주변 지도</span> 
-    							<span class="ml-auto"><a href="#">보러가기</a></span>
+    							<span><i class="icon-map-o"></i>여행 정보</span> 
+    							<span class="ml-auto"><a href="<c:url value='/tour/nara'/>">보러가기</a></span>
     						</p>
     					</div>
     				</div>

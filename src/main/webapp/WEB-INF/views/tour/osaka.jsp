@@ -62,7 +62,7 @@
   </nav>
     <!-- END nav -->
  
-     <div class="hero-wrap js-fullheight" style="background-image: url(https://d1blyo8czty997.cloudfront.net/tour-photos/1435/1200x600/5178241972.jpg);">
+     <div class="hero-wrap js-fullheight" style="background-image: url(https://t1.daumcdn.net/thumb/R1280x0/?fname=http%3A//t1.daumcdn.net/brunch/service/user/STq/image/QRoo3Gklw_3mPM4mDeTd0afwPYo);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
@@ -87,18 +87,7 @@
 		              <div class="form-group">
 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
-		              <div class="form-group">
-		                <div class="select-wrap one-third">
-	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                    <select name="" id="" class="form-control" placeholder="도시 입력">
-	                      <option value="">도시를 입력하세요</option>
-	                      <option value="">도쿄</option>
-	                      <option value="">오사카</option>
-	                      <option value="">교토</option>
-	                      <option value="">고베</option>
-	                    </select>
-	                  </div>
-		              </div>
+		              
 		              <div class="form-group">
 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>

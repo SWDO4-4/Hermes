@@ -87,7 +87,7 @@
 		              <div class="form-group">
 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
-
+		              
 		              <div class="form-group">
 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>
@@ -100,52 +100,50 @@
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/211_kiyomizudera.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://t1.daumcdn.net/cfile/tistory/23784F345864C86309');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1141_gion.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://cdn.imweb.me/upload/S201612185855798c0088d/58b977a315694.jpg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1131_kyoto-tower.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hat_kobe09s3200.jpg/1200px-Hat_kobe09s3200.jpg');"></div>
           				</div>
           			</div>
           		</div>
           		<div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
           			<span>주요 도시 &amp; 관광지</span>
-          			<h2>교토</h2>
+          			<h2>고베</h2>
           			<p class="rate mb-5">
-          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 서부</a></span>
+          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 효고현</a></span>
     						</p>
-    						<p>교토의 관광지 인기순</p>
+    						<p>고베의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>
-	    							<li>1. 아리시야마</li>
-	    							<li>2. 기요미즈데라</li>
-	    							<li>3. 킨카쿠지 금각사 </li>
-	    							<li>4. 킨카쿠지 은각사 </li>
+	    							<li>1. 스테이크랜드</li>
+	    							<li>2. 스테이크 아오야마</li>
+	    							<li>3. 가츠동 요시베 </li>
+	    							<li>4. 로쇼키 </li>
 	    						</ul>
 	    						<ul class="ml-md-5">
-	    							<li>5. 교토 역</li>
-	    							<li>6. 산넨자카</li>
-	    							<li>7. 시조가와라마치</li>
-	    							<li>8. 난젠지</li>
+	    							<li>5. 하버랜드</li>
+	    							<li>6. 레드락</li>
+	    							<li>7. 메리켄 파크</li>
+	    							<li>8. 난킨마치</li>
 	    						</ul>
     						</div>
-    						<p>일본의 역사와 전통을 가장 잘 접할 수 있는 도시 교토. 
-    						일본의 옛 수도답게 헤이안 시대의 문화가 남아있는 절, 신사, 역사 유적지가 대표적인 관광지이다. 
-    						벚꽃, 단풍 명소로도 유명하다.
-    						 교토는 가장 유명한 건출물인 금각사를 포함해 세계 문화 유산만 17가지를 가지고 있어, 
-    						 천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 
-    						 생선 정식 요리인 교카이세키가 유명하고, 
-    						 영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
-    						 교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다.</p>
+    						<p>일본에서 6번째로 큰 도시인 고베는 맛과 멋의 도시이다. 
+    						유럽풍의 세련된 건물들이 즐비해 있어 마치 작은 유럽을 연상시킨다. 
+    						철인 28호 동상과 함께 동심으로 돌아갈 수 있고, 
+    						모토마치는 대표적인 고베의 상점가로 쇼핑을 즐길 수 있다. 
+    						일본 3대 와규중 하나인 고베소, 고베에만 있는 고베스위츠 등 다양한 먹거리가 있다. 
+    						스타벅스 기타노이진칸점은 유형문화재로 등재되어 있어 한번 쯤 커피를 마실만 하다.</p>
           		</div>
           		<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">여행 동영상</h4>
           			<div class="block-16">
 		              <figure>
-		                <img src='https://kyoto.travel/info/getting-to-kyoto/l0fe8b0000000z4d-img/ix.1585613499928.jpg' alt="Image placeholder" class="img-fluid">
-		                <a href="https://www.youtube.com/watch?v=bcjJ1UXdpg4" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+		                <img src='https://ww.namu.la/s/f070f9995cb63f460d1aec5eebb6b6e39fa5dbecc74f9660c4a93a1dca07b0d96a4440623dabef098c511a38e25439cbf0dbbbdabe199c2710f7fac109568ba422b414b40aa515dc69ee6ae82a89fb13ea753a76415e26f1cab74ab5fd301069bae762e07aa632251703357cfcfa4caa' alt="Image placeholder" class="img-fluid">
+		                <a href="https://www.youtube.com/watch?v=tUiwTeFt0zM" class="play-button popup-vimeo"><span class="icon-play"></span></a>
 		              </figure>
 		            </div>
           		</div>         		
@@ -157,7 +155,8 @@
 
 
 
- 
+  
+
     
 
 

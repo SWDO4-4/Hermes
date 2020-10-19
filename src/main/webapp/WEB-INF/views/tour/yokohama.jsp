@@ -87,7 +87,7 @@
 		              <div class="form-group">
 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
-
+		              
 		              <div class="form-group">
 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>
@@ -100,52 +100,49 @@
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/211_kiyomizudera.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://holidaygolf.co.kr/wp-content/uploads/2017/04/dvwbivi5.jpg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1141_gion.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://t1.daumcdn.net/cfile/tistory/215AE3405227739F07');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1131_kyoto-tower.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://s3-ap-northeast-1.amazonaws.com/cubic-data2019/wp-content/uploads/2019/03/860beb965dc0e9155f915e49d64b8b1b-1024x683.jpg');"></div>
           				</div>
           			</div>
           		</div>
           		<div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
           			<span>주요 도시 &amp; 관광지</span>
-          			<h2>교토</h2>
+          			<h2>요코하마</h2>
           			<p class="rate mb-5">
-          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 서부</a></span>
+          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 가나가와현</a></span>
     						</p>
-    						<p>교토의 관광지 인기순</p>
+    						<p>요코하마의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>
-	    							<li>1. 아리시야마</li>
-	    							<li>2. 기요미즈데라</li>
-	    							<li>3. 킨카쿠지 금각사 </li>
-	    							<li>4. 킨카쿠지 은각사 </li>
+	    							<li>1. 요코하마 포켓몬센터</li>
+	    							<li>2. 오산바시</li>
+	    							<li>3. 요시무라 </li>
+	    							<li>4. 코스모월드 </li>
 	    						</ul>
 	    						<ul class="ml-md-5">
-	    							<li>5. 교토 역</li>
-	    							<li>6. 산넨자카</li>
-	    							<li>7. 시조가와라마치</li>
-	    							<li>8. 난젠지</li>
+	    							<li>5. 중화기</li>
+	    							<li>6. 빌즈</li>
+	    							<li>7. 야마시타 공원</li>
+	    							<li>8. 미나토미라이21</li>
 	    						</ul>
     						</div>
-    						<p>일본의 역사와 전통을 가장 잘 접할 수 있는 도시 교토. 
-    						일본의 옛 수도답게 헤이안 시대의 문화가 남아있는 절, 신사, 역사 유적지가 대표적인 관광지이다. 
-    						벚꽃, 단풍 명소로도 유명하다.
-    						 교토는 가장 유명한 건출물인 금각사를 포함해 세계 문화 유산만 17가지를 가지고 있어, 
-    						 천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 
-    						 생선 정식 요리인 교카이세키가 유명하고, 
-    						 영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
-    						 교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다.</p>
+    						<p>도심 테마를 가지고 있는 세련된 도시 요코하마. 
+    						세계 최대규모의 차이나타운, 모토마치 거리, 대관람차 코스모크록21 등 
+    						많은 관광스팟이 있다. 미나토 미라이 21의 아름다운 야경은 일본의 야경중에서도 손 꼽힌다.
+    						 아카렌카 창고에서는 쇼핑은 물론 아름다운 외관도 즐길 수 있다. 
+    						 매년 7월에 열리는 하나비 마쓰리 불꽃축제는 큰 규모를 자랑하여 많은 사람이 몰리는 축제이다.</p>
           		</div>
           		<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">여행 동영상</h4>
           			<div class="block-16">
 		              <figure>
-		                <img src='https://kyoto.travel/info/getting-to-kyoto/l0fe8b0000000z4d-img/ix.1585613499928.jpg' alt="Image placeholder" class="img-fluid">
-		                <a href="https://www.youtube.com/watch?v=bcjJ1UXdpg4" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+		                <img src='https://pix10.agoda.net/hotelImages/6561182/0/629d161905d8d3215ee479a51eeccd52.jpg?s=1024x768' alt="Image placeholder" class="img-fluid">
+		                <a href="https://www.youtube.com/watch?v=vNXB256Kpr8" class="play-button popup-vimeo"><span class="icon-play"></span></a>
 		              </figure>
 		            </div>
           		</div>         		
@@ -157,7 +154,8 @@
 
 
 
- 
+  
+
     
 
 

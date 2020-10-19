@@ -87,7 +87,7 @@
 		              <div class="form-group">
 		                <input type="text" class="form-control" placeholder="도시, 관광지 검색">
 		              </div>
-
+		              
 		              <div class="form-group">
 		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
 		              </div>
@@ -100,52 +100,48 @@
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/211_kiyomizudera.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://i.ytimg.com/vi/tdMKuNdh6J4/maxresdefault.jpg');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1141_gion.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://i2.wp.com/www.agoda.com/wp-content/uploads/2019/08/2-day-nara-itinerary-Horyuji-Temple-3-1024x683.jpg?resize=1024%2C683');"></div>
           				</div>
           				<div class="item">
-          					<div class="hotel-img" style="background-image: url('http://www.kyototourism.org/kr/sightseeing-info/images/1131_kyoto-tower.jpg');"></div>
+          					<div class="hotel-img" style="background-image: url('https://i2.wp.com/www.agoda.com/wp-content/uploads/2019/08/Nara-itinerary-1N2D-Kasuga-Taisha-Shrine-1024x683.jpg?resize=1024%2C683');"></div>
           				</div>
           			</div>
           		</div>
           		<div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
           			<span>주요 도시 &amp; 관광지</span>
-          			<h2>교토</h2>
+          			<h2>나라</h2>
           			<p class="rate mb-5">
-          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 서부</a></span>
+          				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 나라현</a></span>
     						</p>
-    						<p>교토의 관광지 인기순</p>
+    						<p>나라의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>
-	    							<li>1. 아리시야마</li>
-	    							<li>2. 기요미즈데라</li>
-	    							<li>3. 킨카쿠지 금각사 </li>
-	    							<li>4. 킨카쿠지 은각사 </li>
+	    							<li>1. 사슴공원</li>
+	    							<li>2. 도다이지</li>
+	    							<li>3. 모스버거 </li>
+	    							<li>4. 호류지 </li>
 	    						</ul>
 	    						<ul class="ml-md-5">
-	    							<li>5. 교토 역</li>
-	    							<li>6. 산넨자카</li>
-	    							<li>7. 시조가와라마치</li>
-	    							<li>8. 난젠지</li>
+	    							<li>5. 고후쿠지</li>
+	    							<li>6. 카스가다이샤 신사</li>
+	    							<li>7. 쇼소인</li>
+	    							<li>8. 우키미도</li>
 	    						</ul>
     						</div>
-    						<p>일본의 역사와 전통을 가장 잘 접할 수 있는 도시 교토. 
-    						일본의 옛 수도답게 헤이안 시대의 문화가 남아있는 절, 신사, 역사 유적지가 대표적인 관광지이다. 
-    						벚꽃, 단풍 명소로도 유명하다.
-    						 교토는 가장 유명한 건출물인 금각사를 포함해 세계 문화 유산만 17가지를 가지고 있어, 
-    						 천천히 각 관광지를 둘러보며 여행하기에 좋은 도시다. 
-    						 생선 정식 요리인 교카이세키가 유명하고, 
-    						 영화 게이샤의 추억 촬영지로 유명한 후시미이나리 신사가 인기 여행지다. 
-    						 교토의 사찰과 사원, 정원들은 사진을 찍는 여행객들의 출사지로도 유명하다.</p>
+    						<p>귀여운 사슴들이 돌아다니는 나라. 
+    						오사카와 교토 근교에 위치하고 있어 잠깐 반나절 정도들리기 좋은 관광지이다. 
+    						사슴공원에서 초록의 자연과 함께 사슴에게 먹이를 주던가 함께 운치있는 산책을 즐길 수 있다. 
+    						사슴뿐만 아니라 일본에서 두번째로 높은 탑과 세계최대 목조 건물이라는 도다이지와 많은 일본의 국보를 볼 수 있는 관광지이다</p>
           		</div>
           		<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">여행 동영상</h4>
           			<div class="block-16">
 		              <figure>
-		                <img src='https://kyoto.travel/info/getting-to-kyoto/l0fe8b0000000z4d-img/ix.1585613499928.jpg' alt="Image placeholder" class="img-fluid">
-		                <a href="https://www.youtube.com/watch?v=bcjJ1UXdpg4" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+		                <img src='https://eateryjapan.com/wp-content/uploads/2019/12/7-1.jpg' alt="Image placeholder" class="img-fluid">
+		                <a href="https://www.youtube.com/watch?v=vFzyww71qwo" class="play-button popup-vimeo"><span class="icon-play"></span></a>
 		              </figure>
 		            </div>
           		</div>         		
@@ -157,7 +153,8 @@
 
 
 
- 
+  
+
     
 
 

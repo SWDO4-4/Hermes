@@ -28,4 +28,29 @@ public class TourController {
 	public String kyoto() {
 		return "/tour/kyoto";
 	}
+	
+	@RequestMapping(value = "/tour/gobe", method = RequestMethod.GET)
+	public String gobe() {
+		return "/tour/gobe";
+	}
+	
+	@RequestMapping(value = "/tour/yokohama", method = RequestMethod.GET)
+	public String yokohama() {
+		return "/tour/yokohama";
+	}
+	
+	@RequestMapping(value = "/tour/nagoya", method = RequestMethod.GET)
+	public String nagoya() {
+		return "/tour/nagoya";
+	}
+	
+	@RequestMapping(value = "/tour/nara", method = RequestMethod.GET)
+	public String nara() {
+		return "/tour/nara";
+	}
+	
+	@RequestMapping(value = "/tour/sapporo", method = RequestMethod.GET)
+	public String sapporo() {
+		return "/tour/sapporo";
+	}
 }
