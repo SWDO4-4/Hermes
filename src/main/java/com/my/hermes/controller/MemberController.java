@@ -45,12 +45,12 @@ public class MemberController {
 	// 로그인 기능
 	@RequestMapping(value = "/member/login", method = RequestMethod.POST)
 	public String loginGo(MemberVO vo, HttpSession httpSession) {
-		ArrayList<MemberVO> result = dao.login(vo);
+		String result = dao.login(vo);
 		if (result == null) {
 			return "/member/loginForm";
 		} else {
 			httpSession.setAttribute("userid", vo.getUser_id());
-			httpSession.setAttribute("useremail", result.get(0).getUser_email());
+			httpSession.setAttribute("useremail", vo.getUser_email());
 			return "redirect:/";
 		}
 	}

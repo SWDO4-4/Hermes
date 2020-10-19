@@ -7,7 +7,7 @@ import com.my.hermes.vo.MemberVO;
 public interface MemberMapper {
 
 	// 로그인 기능
-	public ArrayList<MemberVO> login(MemberVO vo);
+	public String login(MemberVO vo);
 	
 	// 회원가입 기능
 	public int sign(MemberVO vo);

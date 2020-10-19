@@ -17,8 +17,8 @@ public class MemberDAO {
 	private SqlSession session;
 	
 	// 로그인 기능
-	public ArrayList<MemberVO> login(MemberVO vo) {
-		ArrayList<MemberVO> result = null;
+	public String login(MemberVO vo) {
+		String result = null;
 		try {
 			MemberMapper mapper = session.getMapper(MemberMapper.class);
 			result = mapper.login(vo);

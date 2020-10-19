@@ -101,7 +101,7 @@
           	<div class="row">
           		<div class="col-md-4 ftco-animate">
 		    				<div class="destination">
-		    					<a href="<c:url value='/tour/tourinfo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    					<a href="<c:url value='/tour/tokyo'/>" class="img img-2 d-flex justify-content-center align-items-center" 
 		    						style="background-image: url('https://www.visakorea.com/dam/VCOM/regional/ap/Marquees/marquee-destinations-tokyo-1600x900.jpg');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
@@ -110,7 +110,7 @@
 		    					<div class="text p-3">
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="<c:url value='/tour/tourinfo'/>">도쿄</a></h3>
+				    						<h3><a href="<c:url value='/tour/tokyo'/>">도쿄</a></h3>
 			    						</div>
 			    						<div class="two">
 			    							<span class="price">Tokyo</span>
@@ -120,7 +120,7 @@
 		    						<p class="days"><span>일본 수도이자 최대의 도시</span></p>
 		    						<hr>
 		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i>공항편</span> 
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
 		    							<span class="ml-auto"><a href="#">날씨</a></span>
 		    						</p>
 		    					</div>

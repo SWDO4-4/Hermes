@@ -16,7 +16,8 @@
 			alert("아이디를 입력해주세요.");
 			return false;
 		}
-		if(useridDoc.value.length < 3 || acc_idDoc.value.length > 12) {
+		
+		if(useridDoc.value.length < 3 || useridDoc.value.length > 12) {
 			alert("아이디는 3~12글자로 입력해 주세요.");
 			return false;
 		}
@@ -26,7 +27,7 @@
 			alert("비밀번호를 입력해주세요.");
 			return false;
 		}
-		if(userpwdDoc.value.length < 3 || acc_pwDoc.value.length > 10) {
+		if(userpwdDoc.value.length < 3 || userpwdDoc.value.length > 10) {
 			alert("비밀번호는 5~10글자로 입력해주세요.");
 			return false;
 		}
