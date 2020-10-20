@@ -382,7 +382,7 @@ $(function(){
 		    			<div class="col-md-4 ftco-animate">
 		    				<div class="destination">
 		    					<a href="<c:url value='/tour/gobe'/>" class="img img-2 d-flex justify-content-center align-items-center" 
-		    						style="background-image: url('https://lh3.googleusercontent.com/proxy/XTS_YgZ1MM0bHIEt8NXLJoHUAaOHRcBJEWca83VI0YW161HdZmf0wePtB3IBwikKnD3zKyJx3vTRrJhrxvNZk2CbyHyA79G8OFVHW5Adpz8mNlxt4UOG_D0PSC10Q0FultHPtOurCJRTz6X5sIt0WRCFAMvNxwupYoY4Py6i_a_FISTgD4p7Y7tYmK8ZUshp-lYZhy_KGxiM6tRGEnGTYrsBmpicEeD0mw7OY2UVdShiXf3gQnjsrD1Dto0ExBiNVuLcZihATjPqdsEoyuYH619Hdo2D65vZhsOuAHqGJ84yBbVoHjveJLYaFvlXcJE2jxiQkw4');">
+		    						style="background-image: url('https://t1.daumcdn.net/cfile/tistory/2202BA345864C85D03');">
 		    						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
     						</div>

@@ -30,6 +30,77 @@
     <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">
     
     <link rel="stylesheet" href="<c:url value='/resources/fonts/material-icon/css/material-design-iconic-font.min.css'/>">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+	var apiURI = "http://api.openweathermap.org/data/2.5/weather?lat=34.6777645&lon=135.4160249&appid=d84691dc195879fc0f05365198f1f5a0";
+	$.ajax({
+		url : apiURI,
+		dataType : "json",
+		type : "GET",
+		async : "false",
+		success : function(resp) {
+			console.log(resp);
+			var tag = "<tr>";
+			tag +="<td>";
+			tag +="현재온도 : " + Math.round((resp.main.temp - 273.15));
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="현재습도 : " + resp.main.humidity;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="날씨 : " + resp.weather[0].main;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="상세날씨설명 : " + resp.weather[0].description;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="날씨 이미지 : ";
+			tag +="<img src='http://openweathermap.org/img/wn/";
+			tag +=resp.weather[0].icon;
+			tag +="@2x.png'>";
+			
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="바람   : " + resp.wind.speed;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="나라   : " + resp.sys.country;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			
+
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="구름  : " + (resp.clouds.all) + "%";
+			tag +="</td>";
+			tag += "</tr>";
+			tag +="</tr>";
+				$("#here").html(tag);
+
+				var link = document.location.href; 
+				console.log(link);
+		}
+	});	
+</script>
   </head>
   <body>
     
@@ -94,6 +165,7 @@
 		            </div>
 	            </form>
         		</div>
+        		<table id="here"></table>
           </div>
           <div class="col-lg-9">
           	<div class="row">
@@ -115,7 +187,7 @@
           			<h2>오사카</h2>
           			<p class="rate mb-5">
           				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 중부 오사카부</a></span>
-    						</p>
+    						</p>	
     						<p>오사카의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>

@@ -25,7 +25,7 @@ public class MapController {
 	public String mapwrite(MapVO vo,HttpSession session) {
 		String userid = (String)session.getAttribute("userid");
 		vo.setUser_id(userid);
-		dao.write(vo);
+		dao.write(vo);	
 		
 		return "redirect:/map/mapmain";
 	}

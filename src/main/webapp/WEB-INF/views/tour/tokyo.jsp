@@ -30,6 +30,77 @@
     <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">
     
     <link rel="stylesheet" href="<c:url value='/resources/fonts/material-icon/css/material-design-iconic-font.min.css'/>">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+	var apiURI = "http://api.openweathermap.org/data/2.5/weather?lat=35.6745774&lon=139.6158907&appid=d84691dc195879fc0f05365198f1f5a0";
+	$.ajax({
+		url : apiURI,
+		dataType : "json",
+		type : "GET",
+		async : "false",
+		success : function(resp) {
+			console.log(resp);
+			var tag = "<tr>";
+			tag +="<td>";
+			tag +="현재온도 : " + Math.round((resp.main.temp - 273.15));
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="현재습도 : " + resp.main.humidity;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="날씨 : " + resp.weather[0].main;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="상세날씨설명 : " + resp.weather[0].description;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="날씨 이미지 : ";
+			tag +="<img src='http://openweathermap.org/img/wn/";
+			tag +=resp.weather[0].icon;
+			tag +="@2x.png'>";
+			
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="바람   : " + resp.wind.speed;
+			tag +="</td>";
+			tag +="</tr>";
+			
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="나라   : " + resp.sys.country;
+			tag +="</td>";
+			tag +="</tr>";
+			
+		
+			tag +="<tr>";
+			tag +="<td>";
+			tag +="구름  : " + (resp.clouds.all) + "%";
+			tag +="</td>";
+			tag += "</tr>";
+			tag +="</tr>";
+				$("#here").html(tag);
+
+				var link = document.location.href; 
+				console.log(link);
+		}
+	});	
+</script>
   </head>
   <body>
     
@@ -94,6 +165,9 @@
 		            </div>
 	            </form>
         		</div>
+        		
+        		<hr>
+        		<table id="here"></table>
           </div>
           <div class="col-lg-9">
           	<div class="row">
@@ -116,6 +190,7 @@
           			<p class="rate mb-5">
           				<span class="loc"><a href="#"><i class="icon-map"></i> 위치 : 일본 혼슈 동부, 도쿄도</a></span>
     						</p>
+		
     						<p>도쿄의 관광지 인기순</p>
     						<div class="d-md-flex mt-5 mb-5">
     							<ul>
@@ -257,7 +332,6 @@
   <script src="<c:url value='/resources/js/bootstrap-datepicker.js'/>"></script>
   <script src="<c:url value='/resources/js/jquery.timepicker.min.js'/>"></script>
   <script src="<c:url value='/resources/js/scrollax.min.js'/>"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="<c:url value='/resources/js/google-map.js'/>"></script>
   <script src="<c:url value='/resources/js/main.js'/>"></script>
     
