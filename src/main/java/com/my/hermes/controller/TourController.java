@@ -53,4 +53,9 @@ public class TourController {
 	public String sapporo() {
 		return "/tour/sapporo";
 	}
+	
+	@RequestMapping(value = "/tour/fukuoka", method = RequestMethod.GET)
+	public String fukuoka() {
+		return "/tour/fukuoka";
+	}
 }

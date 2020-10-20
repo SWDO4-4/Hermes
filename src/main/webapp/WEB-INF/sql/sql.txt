@@ -25,8 +25,9 @@ create table hermes_reply (
     reply_inputdate date            DEFAULT sysdate
 );
 
-create table hermes_map (
-    map_num         number(20)      primary key,
+ create table hermes_map (
+    map_title   varchar2(20) not null,
+    map_inputdate date default sysdate,
     user_id         varchar2(20)    not null unique CONSTRAINT map_userid_fk3 references hermes_user(user_id) on delete cascade,
     map_origin      varchar2(100)   not null,
     map_destination varchar2(100)   not null,

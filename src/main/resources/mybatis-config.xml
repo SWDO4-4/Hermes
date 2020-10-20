@@ -6,10 +6,12 @@
 	<typeAliases>
 		<typeAlias type="com.my.hermes.vo.MemberVO" alias="member"/>
 		<typeAlias type="com.my.hermes.vo.BoardVO" alias="board"/>
+		<typeAlias type="com.my.hermes.vo.MapVO" alias="mapinfo"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mapper/memberMapper.xml"/>
 		<mapper resource="mapper/boardMapper.xml"/>
+		<mapper resource="mapper/MapMapper.xml"/>
 	</mappers>
 </configuration>

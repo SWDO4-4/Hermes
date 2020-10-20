@@ -322,22 +322,50 @@
 		    					</div>
 		    				</div>
 		    			</div>
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="<c:url value='/tour/fukuoka'/>" class="img img-2 d-flex justify-content-center align-items-center" 
+		    						style="background-image: url('https://prd-kanko-storage.s3.amazonaws.com/assets/uploads/sites/5/2018/03/15010509/DSC6816_R.jpg');">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="<c:url value='/tour/fukuoka'/>">후쿠오카</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price">Fukuoka</span>
+		    							</div>
+		    						</div>
+		    						<p>후쿠오카 타워</p>
+		    						<p class="days"><span>큐슈의 중심도시</span></p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>지도 정보</span> 
+		    							<span class="ml-auto"><a href="<c:url value='/tour/fukuoka'/>">날씨</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
           	</div>
-          	<div class="row mt-5">
-		          <div class="col text-center">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
+<!--           	<div class="row mt-5"> -->
+<!-- 		          <div class="col text-center"> -->
+<!-- 		            <div class="block-27"> -->
+<!-- 		              <ul> -->
+<!-- 		                <li><a href="#">&lt;</a></li> -->
+<!-- 		                <li class="active"><span>1</span></li> -->
+<!-- 		                <li><a href="#">2</a></li> -->
+<!-- 		                <li><a href="#">3</a></li> -->
+<!-- 		                <li><a href="#">4</a></li> -->
+<!-- 		                <li><a href="#">5</a></li> -->
+<!-- 		                <li><a href="#">&gt;</a></li> -->
+<!-- 		              </ul> -->
+<!-- 		            </div> -->
+<!-- 		          </div> -->
+<!-- 		        </div> -->
           </div> <!-- .col-md-8 -->
         </div>
       </div>

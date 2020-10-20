@@ -256,7 +256,7 @@
           }
           const  way= [];
           const waypointsInput = document.getElementById("waypoints-input");
-          const checkboxArray = document.getElementsByName("waypoints-input");
+          const checkboxArray = document.getElementsByName("waypoints_input");
         
           var a=0;
         	 for (let i = 0; i < checkboxArray.length; i++) {
@@ -345,26 +345,29 @@
         <div class="row">
 			<div class="col-lg-3 sidebar">
         		<div class="sidebar-wrap bg-light ftco-animate">
-        			<h3 class="heading mb-4">경유지 검색</h3>
+        		<form action="<c:url value='/map/mapwrite'/>" method="post">
+        			<h3 class="heading mb-4">경로 검색</h3>
         				<div class="fields">
-		              <div class="form-group">
-		                <input type="text" id="origin-input" class="form-control" placeholder="출발지">
-		              </div>
-		                 <input id="waypoints-input" name="waypoints-input" class="controls" type="text" placeholder="경유지">
-				       	 <input id="waypoints-input1" name="waypoints-input" class="controls" type="text" placeholder="경유지">
-				      	 <input id="waypoints-input2" name="waypoints-input" class="controls" type="text" placeholder="경유지">
-				         <input id="waypoints-input3" name="waypoints-input" class="controls" type="text" placeholder="경유지">
-				         <input id="waypoints-input4" name="waypoints-input" class="controls" type="text" placeholder="경유지">
-		              
-		              <br><br>
-		           
-					  <br>
-		              <input id="destination-input" class="form-control" type="text" placeholder="목적지">
-		              <br>
-		              <div class="form-group">
-		                <input type="submit" value="검색" class="btn btn-primary py-3 px-5">
-		              </div>
+			              <div class="form-group">
+			                <input type="text" id="origin-input" class="form-control" placeholder="출발지" name="map_origin">
+			              </div>
+			                 <input id="waypoints-input" name="waypoints_input" class="controls" type="text" placeholder="경유지" style="width: 210px">
+					       	 <input id="waypoints-input1" name="waypoints_input" class="controls" type="text" placeholder="경유지" style="width: 210px">
+					      	 <input id="waypoints-input2" name="waypoints_input" class="controls" type="text" placeholder="경유지" style="width: 210px">
+					         <input id="waypoints-input3" name="waypoints_input" class="controls" type="text" placeholder="경유지" style="width: 210px">
+					         <input id="waypoints-input4" name="waypoints_input" class="controls" type="text" placeholder="경유지" style="width: 210px">
+			              <br><br>
+			              <input id="destination-input" class="form-control" type="text" placeholder="목적지" name="map_destination" >
+			              <br>
+			              <hr>
+			              <input type="text" name="map_title" class="form-control" id="map_title" placeholder="저장 제목">
+			              <br>
+			              
+			              <div class="form-group">
+			                <input type="submit" value="저장" class="btn btn-primary py-3 px-5">
+			              </div>
 		            </div>
+        		</form>
         		</div>
         	 </div>
         	 
