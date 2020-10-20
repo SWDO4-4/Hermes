@@ -13,17 +13,18 @@ create table hermes_board (
     board_savedfile varchar2(50)    unique,
     board_inputdate date            DEFAULT sysdate
 );
-
 create sequence hermes_board_seq;
 
 
 create table hermes_reply (
-    board_num       number(20)      not null unique CONSTRAINT reply_boardnum_fk2 references hermes_board(board_num) on delete cascade,
+    board_num       number(20)      not null CONSTRAINT reply_boardnum_fk2 references hermes_board(board_num) on delete cascade,
     reply_num       number(20)      primary key,
-    user_id         varchar2(20)    not null unique CONSTRAINT reply_userid_fk2 references hermes_user(user_id) on delete cascade,
+    user_id         varchar2(20)    not null CONSTRAINT reply_userid_fk2 references hermes_user(user_id) on delete cascade,
     reply_content   varchar2(1000)  not null,
     reply_inputdate date            DEFAULT sysdate
 );
+create sequence hermes_reply_seq;
+
 
 create table hermes_map (
     map_num         number(20)      primary key,

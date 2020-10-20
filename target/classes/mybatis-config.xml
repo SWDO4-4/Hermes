@@ -6,6 +6,7 @@
 	<typeAliases>
 		<typeAlias type="com.my.hermes.vo.MemberVO" alias="member"/>
 		<typeAlias type="com.my.hermes.vo.BoardVO" alias="board"/>
+		<typeAlias type="com.my.hermes.vo.ReplyVO" alias="reply"/>
 	</typeAliases>
 	
 	<mappers>

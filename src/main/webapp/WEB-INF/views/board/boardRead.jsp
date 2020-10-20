@@ -100,35 +100,36 @@ body{
             <div class="pt-5 mt-5">
               <h3 class="mb-5">N개의 리플(리플 달린 수)</h3>
               <ul class="comment-list">
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src='<c:url value="/resources/images/person_1.jpg"/>' alt="Image placeholder">
-                  </div>
-                  <div class="comment-body">
-                    <h3>리플 단 사람</h3>
-                    <div class="meta">리플 단 시각</div>
-                    <p>리플 내용</p>
-                    <p><a href="#" class="reply">리플 달기</a></p>
-                  </div>
-                </li>
+              	<c:forEach items="${requestScope.replyList}" var="replyList">
+	                <li class="comment">
+	                  <div class="vcard bio">
+	                    <img src='<c:url value="/resources/images/person_1.jpg"/>' alt="Image placeholder">
+	                  </div>
+	                  <div class="comment-body">
+	                    <h3>${replyList.user_id}</h3>
+	                    <div class="meta">${replyList.reply_inputdate}</div>
+	                    <p>${replyList.reply_content}</p>
+	                  </div>
+	                </li>
+                </c:forEach>
               </ul>
               <!-- END comment-list -->
               
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">리플 달기</h3>
                 
-                <form action="<c:url value='/board/replyWrite' />" class="p-5 bg-light" method="post">
+                <form action="<c:url value='/board/replyWrite?board_num=${requestScope.vo.board_num}' />" class="p-5 bg-light" method="post">
                   <div class="form-group">
                     <label for="name">작성자</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" name="user_id" value="${sessionScope.userid}" readonly="readonly" class="form-control" id="name">
                   </div>
                   <div class="form-group">
                     <label for="email">이메일</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" value="${sessionScope.useremail}" readonly="readonly" class="form-control" id="email">
                   </div>
                   <div class="form-group">
                     <label for="message">리플 내용</label>
-                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="reply_content" id="message" cols="30" rows="10" class="form-control"></textarea>
                   </div>
                   <div class="form-group">
                     <input type="submit" value="리플 달기" class="btn py-3 px-4 btn-primary">

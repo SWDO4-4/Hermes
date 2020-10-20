@@ -45,6 +45,28 @@
 		board_num = #{board_num}
 	</select>
 	
+	<insert id="replyWrite" parameterType="reply">
+	insert into
+		hermes_reply
+	values (
+		#{board_num},
+		hermes_reply_seq.nextval,
+		#{user_id},
+		#{reply_content},
+		sysdate
+	)
+	</insert>
+	
+	<select id="replyList" parameterType="int" resultType="reply">
+	select
+		*
+	from
+		hermes_reply
+	where
+		board_num = #{board_num}
+	order by
+		reply_inputdate
+	</select>
 
 	
 </mapper>

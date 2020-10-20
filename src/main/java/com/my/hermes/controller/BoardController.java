@@ -3,6 +3,7 @@ package com.my.hermes.controller;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.my.hermes.dao.BoardDAO;
 import com.my.hermes.vo.BoardVO;
+import com.my.hermes.vo.ReplyVO;
 
 @Controller
 public class BoardController {
@@ -32,7 +34,9 @@ public class BoardController {
 	@RequestMapping(value = "/board/boardRead", method = RequestMethod.GET)
 	public String boardRead(int board_num, Model model) {
 		BoardVO vo = dao.read(board_num);
+		ArrayList<ReplyVO> replyList = dao.replyList(board_num);
 		model.addAttribute("vo", vo);
+		model.addAttribute("replyList", replyList);
 		return "/board/boardRead";
 	}
 
@@ -64,11 +68,10 @@ public class BoardController {
 		dao.download(board_num, response);
 	}
 	
-	// 게시판 파일 다운로드
+	// 댓글 입력
 	@RequestMapping(value = "/board/replyWrite", method = RequestMethod.POST)
-	public String replyWrite(int board_num, HttpServletResponse response) {
-		dao.download(board_num, response);
-		
-		return "";
+	public String replyWrite(ReplyVO vo) {
+		int result = dao.replyWrite(vo);
+		return "redirect:/board/boardRead?board_num="+vo.getBoard_num();
 	}
 }

@@ -16,6 +16,7 @@ import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.my.hermes.vo.BoardVO;
+import com.my.hermes.vo.ReplyVO;
 
 @Repository
 public class BoardDAO {
@@ -85,6 +86,28 @@ public class BoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public int replyWrite(ReplyVO vo) {
+		int result = 0;
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			result = mapper.replyWrite(vo);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	public ArrayList<ReplyVO> replyList(int board_num) {
+		ArrayList<ReplyVO> result = null;
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			result = mapper.replyList(board_num);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
 	}
 
 }
