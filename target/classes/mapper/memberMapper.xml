@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.hermes.dao.MemberMapper">
+
+	<select id="login" parameterType="member" resultType="member">
+	select
+		*
+	from
+		hermes_user
+	where
+		user_id = #{user_id}
+		and user_pwd = #{user_pwd}
+	</select>
+
+	<insert id="sign" parameterType="member">
+	insert into
+		hermes_user
+	values (
+		#{user_id},
+		#{user_pwd},
+		#{user_email}
+	)
+	</insert>
+	
+	<select id="kakaologin" parameterType="member" resultType="String">
+	SELECT
+		user_id
+	FROM
+		hermes_user
+	WHERE
+		user_email = #{user_email}
+	</select>
+
+	
+</mapper>
