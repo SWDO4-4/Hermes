@@ -98,7 +98,7 @@ body{
 
 
             <div class="pt-5 mt-5">
-              <h3 class="mb-5">N개의 리플(리플 달린 수)</h3>
+              <h3 class="mb-5">${requestScope.replyCount}개의 리플</h3>
               <ul class="comment-list">
               	<c:forEach items="${requestScope.replyList}" var="replyList">
 	                <li class="comment">

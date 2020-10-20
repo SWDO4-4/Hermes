@@ -35,8 +35,10 @@ public class BoardController {
 	public String boardRead(int board_num, Model model) {
 		BoardVO vo = dao.read(board_num);
 		ArrayList<ReplyVO> replyList = dao.replyList(board_num);
+		int replyCount = replyList.size();
 		model.addAttribute("vo", vo);
 		model.addAttribute("replyList", replyList);
+		model.addAttribute("replyCount", replyCount);
 		return "/board/boardRead";
 	}
 
