@@ -78,8 +78,10 @@
 	    		<div class="col-md-6 ftco-animate img about-image" 
 	    			style="background-image: url('<c:url value='/resources/images/about.jpg'/>');">
 	    		</div>
+	    		
 	    		<div class="col-md-6 ftco-animate p-md-5">
 		    		<div class="row">
+		    		
 			          <div class="col-md-12 nav-link-wrap mb-5">
 			            <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			              <a class="nav-link active" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">1. 알아보기</a>
@@ -87,6 +89,7 @@
 			              <a class="nav-link" id="v-pills-goal-tab" data-toggle="pill" href="#v-pills-goal" role="tab" aria-controls="v-pills-goal" aria-selected="false">3. 활용하기</a>
 			            </div>
 			          </div>
+			          
 		          <div class="col-md-12 d-flex align-items-center">  
 		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
 		              
@@ -113,10 +116,12 @@
 			                <p>여행 중이시라면 지도와 제공되는 주변 시설을 한번에, 여행 후에는 후기를 남겨서 다음 여행을 준비하세요!</p>
 				        </div>
 		              </div>
+		              
 		            </div>
 		          </div>
 		        </div>
 		      </div>
+		      
 		    </div>
     	</div>
     </section>

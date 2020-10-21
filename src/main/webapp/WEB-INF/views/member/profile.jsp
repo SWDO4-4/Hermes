@@ -675,6 +675,13 @@ color: #a2a6af
                             <li class="email">${sessionScope.useremail}</li>
                         </ul>
                     </div>
+                    	<br><br>
+                    	<hr>
+                    	<h4>저장된 지도 정보 </h4>
+                    	<br>
+                    	test1 &emsp;&emsp;&emsp;&emsp;&emsp;
+                    	<input class="btn btn-primary" type="button" value="불러오기">
+                    	
                 </div>
                 <div class="content-panel">
                     <h2 class="title">유저 프로필 변경</h2>
@@ -698,10 +705,10 @@ color: #a2a6af
                                 </div>
                             </div>
                         </fieldset>
-                        <hr>
+                        <br>
                         <div class="form-group" style="text-align: right;">
                             <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
-                                <input class="btn btn-primary" type="submit" value="프로필 갱신">
+                                <input class="btn btn-primary" type="submit" value="비밀번호 변경">
                                 <hr>
                              	<a href="<c:url value='/member/signout'/>"><input class="btn btn-primary" type="button" value="회원 탈퇴"></a>
                             </div>
