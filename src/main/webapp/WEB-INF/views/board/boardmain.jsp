@@ -109,10 +109,10 @@ body{
         <div>
           <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '100%' }">
             <div class="block-17 my-4" style="margin-left: 250px;">  
-              <form action="#" class="search-form">
+              <form action="<c:url value='/board/boardmain'/>" class="search-form">
                 <div class="form-group">
                   <span class="icon fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="키워드 검색">
+                  <input type="text" name="searchText" class="form-control" placeholder="키워드 검색">
                 </div>
               </form>   		
             </div> 

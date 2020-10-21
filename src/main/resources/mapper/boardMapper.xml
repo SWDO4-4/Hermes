@@ -5,13 +5,15 @@
 
 <mapper namespace="com.my.hermes.dao.BoardMapper">
 
-	<select id="boardList" resultType="board">
+	<select id="boardList" resultType="board" parameterType="map">
 		select 
 			*
 		from
 			hermes_board
-		order by
-			board_num desc
+		<choose>
+			<when test="serachText == ''">order by board_num desc</when>
+			<when test="serachText != ''">where board_title like '%' || #{searchText} || '%' order by board_num desc</when>
+		</choose>
 	</select>
 	
 	<insert id="write" parameterType="board">

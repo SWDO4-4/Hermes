@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletResponse;
@@ -24,11 +25,13 @@ public class BoardDAO {
 	@Autowired
 	private SqlSession session;
 	
-	public ArrayList<BoardVO> boardList() {
+	public ArrayList<BoardVO> boardList(String searchText) {
 		ArrayList<BoardVO> result = null;
+		HashMap<String, String> map = new HashMap<>();
+		map.put("searchText", searchText);
 		try {
 			BoardMapper mapper = session.getMapper(BoardMapper.class);
-			result = mapper.boardList();
+			result = mapper.boardList(map);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

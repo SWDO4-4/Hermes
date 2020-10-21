@@ -3,13 +3,13 @@ package com.my.hermes.controller;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.my.hermes.dao.BoardDAO;
@@ -24,8 +24,9 @@ public class BoardController {
 	
 	// 게시판 이동 및 목록
 	@RequestMapping(value = "/board/boardmain", method = RequestMethod.GET)
-	public String boardmain(Model model) {
-		ArrayList<BoardVO> list = dao.boardList();
+	public String boardmain(Model model, 
+			@RequestParam(value = "searchText", defaultValue = "") String searchText) {
+		ArrayList<BoardVO> list = dao.boardList(searchText);
 		model.addAttribute("list", list);
 		return "/board/boardmain";
 	}
