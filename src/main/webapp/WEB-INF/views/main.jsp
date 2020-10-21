@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+  <c:choose>
+  	<c:when test="${requestScope.updateResult == 1}">
+  		<script>alert("재로그인 해주십쇼");</script>
+  	</c:when>
+  </c:choose>
     <title>헤르메스 - 일본 여행의 길잡이</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

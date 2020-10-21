@@ -3,6 +3,17 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+  <script>
+  function formCheck() {
+		var userpwdDoc = document.getElementById("user_pwd");
+		var userpwd2Doc = document.getElementById("user_pwdChk");
+
+		if(userpwdDoc.value != userpwd2Doc.value) {
+			alert("동일한 비밀번호를 입력해주세요.");
+			return false;
+		}
+	}
+  </script>
     <title>헤르메스 - 일본 여행의 길잡이</title>
     <style>
     body{
@@ -678,7 +689,7 @@ color: #a2a6af
                 </div>
                 <div class="content-panel">
                     <h2 class="title">유저 프로필 변경</h2>
-                    <form class="form-horizontal">
+                    <form action="<c:url value='/member/pwdUpdate' />" method="post" class="form-horizontal" onsubmit="return formCheck()">
                         <fieldset class="fieldset">
                             <h3 class="fieldset-title">개인 정보</h3>
                         </fieldset>
@@ -686,14 +697,14 @@ color: #a2a6af
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">비밀번호</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="password" class="form-control" placeholder="비밀 번호를 입력해주세요.">
+                                    <input type="password" id="user_pwd" name="user_pwd" class="form-control" placeholder="비밀 번호를 입력해주세요.">
                                     <p class="help-block">비밀번호 입력 규칙 : 5 ~ 10자</p>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">확인</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="password" class="form-control" placeholder="비밀 번호를 입력해주세요.">
+                                    <input type="password" id="user_pwdChk" class="form-control" placeholder="비밀 번호를 입력해주세요.">
                                     <p class="help-block">위와 동일한 값을 입력하세요</p>
                                 </div>
                             </div>

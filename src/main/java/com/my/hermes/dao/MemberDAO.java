@@ -47,14 +47,26 @@ public class MemberDAO {
 	}
 	
 	// 카카오 로그인 기능
-		public ArrayList<MemberVO> kakaologin(MemberVO vo) {
-			ArrayList<MemberVO> result = null;
-			try {
-				MemberMapper mapper = session.getMapper(MemberMapper.class);
-				result = mapper.kakaologin(vo);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			return result;
+	public ArrayList<MemberVO> kakaologin(MemberVO vo) {
+		ArrayList<MemberVO> result = null;
+		try {
+			MemberMapper mapper = session.getMapper(MemberMapper.class);
+			result = mapper.kakaologin(vo);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+		return result;
+	}
+	
+	//비밀번호 업데이트
+	public int pwdUpdate(MemberVO vo) {
+		int result = 0;
+		try {
+			MemberMapper mapper = session.getMapper(MemberMapper.class);
+			result = mapper.pwdUpdate(vo);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 }

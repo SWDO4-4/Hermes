@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.my.hermes.dao.KakaoDAO;
 import com.my.hermes.dao.MemberDAO;
@@ -105,6 +106,21 @@ public class MemberController {
 	@RequestMapping(value = "/member/signout", method = RequestMethod.GET)
 	public String signout() {
 		return "redirect:/";
+	}
+	
+	// 비밀번호 수정
+	@RequestMapping(value = "/member/pwdUpdate", method = RequestMethod.POST)
+	public String pwdUpdate(MemberVO vo, HttpSession session, RedirectAttributes rttr) {
+		String user_id = (String)session.getAttribute("userid");
+		vo.setUser_id(user_id);
+		int result = dao.pwdUpdate(vo);
+		if(result == 1) {
+			rttr.addFlashAttribute("updateResult", result);
+			session.invalidate();
+			return "redirect:/";
+		} else {
+			return "/member/profile";
+		}
 	}
 
 }

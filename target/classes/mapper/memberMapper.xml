@@ -33,6 +33,15 @@
 	WHERE
 		user_email = #{user_email}
 	</select>
+	
+	<update id="pwdUpdate" parameterType="member">
+	update
+		hermes_user
+	set
+		user_pwd = #{user_pwd}
+	where
+		user_id = #{user_id}
+	</update>
 
 	
 </mapper>

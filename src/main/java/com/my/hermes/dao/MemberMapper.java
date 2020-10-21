@@ -14,4 +14,7 @@ public interface MemberMapper {
 	
 	//카카오로그인
 	public ArrayList<MemberVO> kakaologin(MemberVO vo);
+	
+	// 비밀번호 업데이트
+	public int pwdUpdate(MemberVO vo);
 }
